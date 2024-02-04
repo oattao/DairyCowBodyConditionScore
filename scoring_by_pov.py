@@ -38,7 +38,7 @@ def test_model(model, dataloader, device, colname):
     prediction = prediction.set_index('cow_regno', drop=True)
     return metrics, prediction
 
-def test(view):
+def test(view, run_time=0):
     with open('config.json', 'r') as fp:
         config = json.load(fp)
     naive = False
@@ -71,11 +71,11 @@ def test(view):
     device = torch.device("cuda:0")
     model = PointNetRegression(k=num_features)
     model.to(device)
-    previous_model_path = f"./trained_models/{view}_{config['st']}.pth"
+    previous_model_path = f"./trained_models/{view}_{config['st']}_{run_time}.pth"
     model.load_state_dict(torch.load(previous_model_path))
-    colname = f"byview_{view}"
+    colname = f"run_time_{run_time}"
     metrics, prediction = test_model(model, dataloader, device, colname)
-    metrics_path = './log/prediction.csv'
+    metrics_path = './log/pov_prediction.csv'
     if os.path.exists(metrics_path):
         prediction.pop('true_bcs')
         df = pd.read_csv(metrics_path, index_col='cow_regno')
@@ -90,13 +90,14 @@ def test(view):
     # plt.legend(['True', 'Prediction'])
     # plt.show()
 
-def main():
+def main(run_time):
     # for view in ["naive", "head", "tail", "left", "right", "center", "full"]:
-    view = 'cow'
+    view = 'left'
     print("Testing: ", view)
-    test(view)
+    test(view, run_time=i)
 
 if __name__ == "__main__":
-    main()
+    for i in range(5):
+        main(run_time=i)
 
 

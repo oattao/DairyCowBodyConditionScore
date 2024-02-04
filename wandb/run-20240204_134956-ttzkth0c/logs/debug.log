@@ -1,0 +1,14 @@
+2024-02-04 13:49:56,959 INFO    MainThread:4856 [wandb_setup.py:_flush():76] Current SDK version is 0.15.8
+2024-02-04 13:49:56,959 INFO    MainThread:4856 [wandb_setup.py:_flush():76] Configure stats pid to 4856
+2024-02-04 13:49:56,960 INFO    MainThread:4856 [wandb_setup.py:_flush():76] Loading settings from C:\Users\ZOOTOS\.config\wandb\settings
+2024-02-04 13:49:56,960 INFO    MainThread:4856 [wandb_setup.py:_flush():76] Loading settings from E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\wandb\settings
+2024-02-04 13:49:56,960 INFO    MainThread:4856 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-02-04 13:49:56,960 INFO    MainThread:4856 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-02-04 13:49:56,960 INFO    MainThread:4856 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train_pointnet_with_pov.py', 'program': 'train_pointnet_with_pov.py'}
+2024-02-04 13:49:56,961 INFO    MainThread:4856 [wandb_init.py:_log_setup():507] Logging user logs to E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\wandb\run-20240204_134956-ttzkth0c\logs\debug.log
+2024-02-04 13:49:56,961 INFO    MainThread:4856 [wandb_init.py:_log_setup():508] Logging internal logs to E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\wandb\run-20240204_134956-ttzkth0c\logs\debug-internal.log
+2024-02-04 13:49:56,961 INFO    MainThread:4856 [wandb_init.py:init():547] calling init triggers
+2024-02-04 13:49:56,961 INFO    MainThread:4856 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {'all view': ['naive', 'head', 'tail', 'left', 'right', 'center', 'full', 'cow', 'depth'], 'learning_rate': 0.0001, 'num_epochs': 100, 'val_size': 0.25, 'batch_size': 16, 'st': 0, 'depth_map_model': 'eff', 'pcd_paths': ['H:/Dairy Cow 2023/F0/Body/Cleaned/Labelling/Aligned_before_29231122', 'H:/Dairy Cow 2023/F0/Body/Cleaned/Labelling/Aligned_29231122'], 'json_paths': ['H:/Dairy Cow 2023/F0/Body/Cleaned/Labelling/Labelled_before_29231122/body_condition_score/labels', 'H:/Dairy Cow 2023/F0/Body/Cleaned/Labelling/Labelled_29231122/body_condition_score/labels'], 'label_score_path': 'H:/Dairy Cow 2023/F0/Body/Cleaned/Paper2/bcs_score.csv', 'full_cow_path': 'H:/Dairy Cow 2023/F0/Body/Cleaned/Paper2/view/cow', 'rump_path': 'H:/Dairy Cow 2023/F0/Body/Cleaned/Paper2/rump', 'rump_depth_map_path': 'H:/Dairy Cow 2023/F0/Body/Cleaned/Paper2/view/depth', 'npz_path': 'H:/Dairy Cow 2023/F0/Body/Cleaned/Paper2/view', 'view': 'left', 'run time': 4}
+2024-02-04 13:49:56,961 INFO    MainThread:4856 [wandb_init.py:init():591] wandb.init() called when a run is still active
+2024-02-04 13:55:59,990 WARNING MsgRouterThr:4856 [router.py:message_loop():77] message_loop has been closed

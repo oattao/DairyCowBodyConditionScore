@@ -42,13 +42,15 @@ def eval_model(model, dataloader, criterion, device):
     epoch_loss = running_loss / len(dataloader.dataset)
     return epoch_loss
 
-def train(view):
+def train(view, run_time):
     with open('config.json', 'r') as fp:
         training_config = json.load(fp)
     training_config['view'] = view
+    training_config['run time'] = run_time
     wandb.init(
         project="Dairy Body Condition Score", 
-        config=training_config
+        config=training_config,
+        
     )
     config = wandb.config
     naive = False
@@ -93,9 +95,9 @@ def train(view):
     device = torch.device("cuda:0")
     model = PointNetRegression(k=num_features)
     model.to(device)
-    previous_model_path = f"./trained_models/{view}_{config.st-1}.pth"
-    if os.path.exists(previous_model_path):
-        model.load_state_dict(torch.load(previous_model_path))
+    # previous_model_path = f"./trained_models/{view}_{config.st-1}.pth"
+    # if os.path.exists(previous_model_path):
+    #     model.load_state_dict(torch.load(previous_model_path))
     criterion = torch.nn.MSELoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=config.learning_rate)
     # lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=7, gamma=0.1)
@@ -109,13 +111,15 @@ def train(view):
 
         if val_loss < best_loss:
             best_loss = val_loss
-            torch.save(model.state_dict(), f"./trained_models/{view}_{config.st}.pth")
+            torch.save(model.state_dict(), f"./trained_models/{view}_{config.st}_{run_time}.pth")
 
-def main():
+def main(run_time=0):
     # for view in ["head", "tail", "left", "right", "center", "full", "cow"]:
-    view = 'cow'
+    view = 'left'
     print("Training: ", view)
-    train(view)
+    train(view, run_time)
 
 if __name__ == "__main__":
-    main()
+    for i in range(1, 5):
+        print(f"Run time: {i}")
+        main(run_time=i)
