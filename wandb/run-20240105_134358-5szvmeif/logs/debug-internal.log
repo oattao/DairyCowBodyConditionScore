@@ -1,0 +1,192 @@
+2024-01-05 13:43:58,857 INFO    StreamThr :19980 [internal.py:wandb_internal():86] W&B internal server running at pid: 19980, started at: 2024-01-05 13:43:58.857154
+2024-01-05 13:43:58,859 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: status
+2024-01-05 13:43:58,862 INFO    WriterThread:19980 [datastore.py:open_for_write():85] open: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240105_134358-5szvmeif\run-5szvmeif.wandb
+2024-01-05 13:43:58,863 DEBUG   SenderThread:19980 [sender.py:send():379] send: header
+2024-01-05 13:43:58,895 DEBUG   SenderThread:19980 [sender.py:send():379] send: run
+2024-01-05 13:43:59,523 INFO    SenderThread:19980 [dir_watcher.py:__init__():211] watching files in: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240105_134358-5szvmeif\files
+2024-01-05 13:43:59,523 INFO    SenderThread:19980 [sender.py:_start_run_threads():1121] run started: 5szvmeif with start time 1704429838.858155
+2024-01-05 13:43:59,525 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: summary_record
+2024-01-05 13:43:59,526 INFO    SenderThread:19980 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-01-05 13:43:59,537 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: check_version
+2024-01-05 13:43:59,537 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: check_version
+2024-01-05 13:43:59,788 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: run_start
+2024-01-05 13:43:59,814 DEBUG   HandlerThread:19980 [system_info.py:__init__():31] System info init
+2024-01-05 13:43:59,814 DEBUG   HandlerThread:19980 [system_info.py:__init__():46] System info init done
+2024-01-05 13:43:59,814 INFO    HandlerThread:19980 [system_monitor.py:start():181] Starting system monitor
+2024-01-05 13:43:59,815 INFO    SystemMonitor:19980 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2024-01-05 13:43:59,815 INFO    HandlerThread:19980 [system_monitor.py:probe():201] Collecting system info
+2024-01-05 13:43:59,819 INFO    SystemMonitor:19980 [interfaces.py:start():190] Started cpu monitoring
+2024-01-05 13:43:59,819 INFO    SystemMonitor:19980 [interfaces.py:start():190] Started disk monitoring
+2024-01-05 13:43:59,820 INFO    SystemMonitor:19980 [interfaces.py:start():190] Started gpu monitoring
+2024-01-05 13:43:59,826 INFO    SystemMonitor:19980 [interfaces.py:start():190] Started memory monitoring
+2024-01-05 13:43:59,840 INFO    SystemMonitor:19980 [interfaces.py:start():190] Started network monitoring
+2024-01-05 13:43:59,860 DEBUG   HandlerThread:19980 [system_info.py:probe():195] Probing system
+2024-01-05 13:43:59,862 DEBUG   HandlerThread:19980 [system_info.py:_probe_git():180] Probing git
+2024-01-05 13:43:59,921 DEBUG   HandlerThread:19980 [system_info.py:_probe_git():188] Probing git done
+2024-01-05 13:43:59,921 DEBUG   HandlerThread:19980 [system_info.py:probe():240] Probing system done
+2024-01-05 13:43:59,921 DEBUG   HandlerThread:19980 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.8.17', 'heartbeatAt': '2024-01-05T04:43:59.860059', 'startedAt': '2024-01-05T04:43:58.851155', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'train.py', 'codePath': 'DairyCow\\Paper\\train.py', 'git': {'remote': 'http://192.168.10.99/Software.Git.Server/ZOOTOS_RnD-NIAS-SMART_FARM.git', 'commit': '31e57a14a85e9e1d71a436a8641ad8d8f55c7898'}, 'email': 'cow@zootos.com', 'root': 'E:/ZOOTOS RnD/NIAS/SMART FARM', 'host': 'DESKTOP-LLADSVI', 'username': 'ZOOTOS', 'executable': 'E:\\Programs\\miniconda\\envs\\skeypoint\\python.exe', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 3900.0, 'min': 0.0, 'max': 3900.0}, 'cpu_freq_per_core': [{'current': 3900.0, 'min': 0.0, 'max': 3900.0}], 'disk': {'total': 465.75976181030273, 'used': 439.7434883117676}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 63.85447692871094}}
+2024-01-05 13:43:59,921 INFO    HandlerThread:19980 [system_monitor.py:probe():211] Finished collecting system info
+2024-01-05 13:43:59,921 INFO    HandlerThread:19980 [system_monitor.py:probe():214] Publishing system info
+2024-01-05 13:43:59,921 DEBUG   HandlerThread:19980 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2024-01-05 13:43:59,922 DEBUG   HandlerThread:19980 [system_info.py:_save_pip():67] Saving pip packages done
+2024-01-05 13:43:59,922 DEBUG   HandlerThread:19980 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2024-01-05 13:43:59,927 ERROR   HandlerThread:19980 [system_info.py:_save_conda():85] Error saving conda packages: [WinError 2] 지정된 파일을 찾을 수 없습니다
+Traceback (most recent call last):
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 81, in _save_conda
+    subprocess.call(
+  File "E:\Programs\miniconda\envs\skeypoint\lib\subprocess.py", line 340, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "E:\Programs\miniconda\envs\skeypoint\lib\subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "E:\Programs\miniconda\envs\skeypoint\lib\subprocess.py", line 1327, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] 지정된 파일을 찾을 수 없습니다
+2024-01-05 13:43:59,928 DEBUG   HandlerThread:19980 [system_info.py:_save_conda():86] Saving conda packages done
+2024-01-05 13:43:59,928 INFO    HandlerThread:19980 [system_monitor.py:probe():216] Finished publishing system info
+2024-01-05 13:43:59,937 DEBUG   SenderThread:19980 [sender.py:send():379] send: files
+2024-01-05 13:43:59,937 INFO    SenderThread:19980 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2024-01-05 13:43:59,945 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-05 13:43:59,945 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: stop_status
+2024-01-05 13:44:00,410 DEBUG   SenderThread:19980 [sender.py:send():379] send: telemetry
+2024-01-05 13:44:00,412 DEBUG   SenderThread:19980 [sender.py:send():379] send: exit
+2024-01-05 13:44:00,412 INFO    SenderThread:19980 [sender.py:send_exit():584] handling exit code: 1
+2024-01-05 13:44:00,412 INFO    SenderThread:19980 [sender.py:send_exit():586] handling runtime: 0
+2024-01-05 13:44:00,412 INFO    SenderThread:19980 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-01-05 13:44:00,412 INFO    SenderThread:19980 [sender.py:send_exit():592] send defer
+2024-01-05 13:44:00,413 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 13:44:00,413 INFO    HandlerThread:19980 [handler.py:handle_request_defer():170] handle defer: 0
+2024-01-05 13:44:00,413 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: defer
+2024-01-05 13:44:00,413 INFO    SenderThread:19980 [sender.py:send_request_defer():608] handle sender defer: 0
+2024-01-05 13:44:00,413 INFO    SenderThread:19980 [sender.py:transition_state():612] send defer: 1
+2024-01-05 13:44:00,413 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 13:44:00,413 INFO    HandlerThread:19980 [handler.py:handle_request_defer():170] handle defer: 1
+2024-01-05 13:44:00,413 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: defer
+2024-01-05 13:44:00,413 INFO    SenderThread:19980 [sender.py:send_request_defer():608] handle sender defer: 1
+2024-01-05 13:44:00,413 INFO    SenderThread:19980 [sender.py:transition_state():612] send defer: 2
+2024-01-05 13:44:00,414 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 13:44:00,414 INFO    HandlerThread:19980 [handler.py:handle_request_defer():170] handle defer: 2
+2024-01-05 13:44:00,414 INFO    HandlerThread:19980 [system_monitor.py:finish():190] Stopping system monitor
+2024-01-05 13:44:00,414 INFO    HandlerThread:19980 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-05 13:44:00,414 DEBUG   SystemMonitor:19980 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2024-01-05 13:44:00,420 INFO    HandlerThread:19980 [interfaces.py:finish():202] Joined disk monitor
+2024-01-05 13:44:00,420 DEBUG   SystemMonitor:19980 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2024-01-05 13:44:00,420 DEBUG   SystemMonitor:19980 [system_monitor.py:_start():170] Publishing last batch of metrics
+2024-01-05 13:44:00,497 INFO    HandlerThread:19980 [interfaces.py:finish():202] Joined gpu monitor
+2024-01-05 13:44:00,497 INFO    HandlerThread:19980 [interfaces.py:finish():202] Joined memory monitor
+2024-01-05 13:44:00,497 INFO    HandlerThread:19980 [interfaces.py:finish():202] Joined network monitor
+2024-01-05 13:44:00,498 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: defer
+2024-01-05 13:44:00,498 INFO    SenderThread:19980 [sender.py:send_request_defer():608] handle sender defer: 2
+2024-01-05 13:44:00,498 INFO    SenderThread:19980 [sender.py:transition_state():612] send defer: 3
+2024-01-05 13:44:00,498 DEBUG   SenderThread:19980 [sender.py:send():379] send: stats
+2024-01-05 13:44:00,498 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 13:44:00,499 INFO    HandlerThread:19980 [handler.py:handle_request_defer():170] handle defer: 3
+2024-01-05 13:44:00,499 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: defer
+2024-01-05 13:44:00,499 INFO    SenderThread:19980 [sender.py:send_request_defer():608] handle sender defer: 3
+2024-01-05 13:44:00,499 INFO    SenderThread:19980 [sender.py:transition_state():612] send defer: 4
+2024-01-05 13:44:00,499 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 13:44:00,499 INFO    HandlerThread:19980 [handler.py:handle_request_defer():170] handle defer: 4
+2024-01-05 13:44:00,499 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: defer
+2024-01-05 13:44:00,499 INFO    SenderThread:19980 [sender.py:send_request_defer():608] handle sender defer: 4
+2024-01-05 13:44:00,499 INFO    SenderThread:19980 [sender.py:transition_state():612] send defer: 5
+2024-01-05 13:44:00,499 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 13:44:00,499 INFO    HandlerThread:19980 [handler.py:handle_request_defer():170] handle defer: 5
+2024-01-05 13:44:00,500 DEBUG   SenderThread:19980 [sender.py:send():379] send: summary
+2024-01-05 13:44:00,500 INFO    SenderThread:19980 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-01-05 13:44:00,500 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: defer
+2024-01-05 13:44:00,500 INFO    SenderThread:19980 [sender.py:send_request_defer():608] handle sender defer: 5
+2024-01-05 13:44:00,500 INFO    SenderThread:19980 [sender.py:transition_state():612] send defer: 6
+2024-01-05 13:44:00,500 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 13:44:00,501 INFO    HandlerThread:19980 [handler.py:handle_request_defer():170] handle defer: 6
+2024-01-05 13:44:00,501 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: defer
+2024-01-05 13:44:00,501 INFO    SenderThread:19980 [sender.py:send_request_defer():608] handle sender defer: 6
+2024-01-05 13:44:00,505 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: status_report
+2024-01-05 13:44:00,539 INFO    Thread-16 :19980 [dir_watcher.py:_on_file_created():271] file/dir created: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240105_134358-5szvmeif\files\output.log
+2024-01-05 13:44:00,539 INFO    Thread-16 :19980 [dir_watcher.py:_on_file_created():271] file/dir created: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240105_134358-5szvmeif\files\wandb-summary.json
+2024-01-05 13:44:00,539 INFO    Thread-16 :19980 [dir_watcher.py:_on_file_created():271] file/dir created: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240105_134358-5szvmeif\files\requirements.txt
+2024-01-05 13:44:00,540 INFO    Thread-16 :19980 [dir_watcher.py:_on_file_created():271] file/dir created: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240105_134358-5szvmeif\files\wandb-metadata.json
+2024-01-05 13:44:00,540 INFO    Thread-16 :19980 [dir_watcher.py:_on_file_created():271] file/dir created: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240105_134358-5szvmeif\files\conda-environment.yaml
+2024-01-05 13:44:00,720 INFO    SenderThread:19980 [sender.py:transition_state():612] send defer: 7
+2024-01-05 13:44:00,720 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 13:44:00,720 INFO    HandlerThread:19980 [handler.py:handle_request_defer():170] handle defer: 7
+2024-01-05 13:44:00,720 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: defer
+2024-01-05 13:44:00,720 INFO    SenderThread:19980 [sender.py:send_request_defer():608] handle sender defer: 7
+2024-01-05 13:44:00,790 INFO    wandb-upload_0:19980 [upload_job.py:push():131] Uploaded file C:\@TEMP\tmp2fd1zi1ywandb\13wz47ax-wandb-metadata.json
+2024-01-05 13:44:01,239 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: poll_exit
+2024-01-05 13:44:01,539 INFO    Thread-16 :19980 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240105_134358-5szvmeif\files\config.yaml
+2024-01-05 13:44:02,422 INFO    SenderThread:19980 [sender.py:transition_state():612] send defer: 8
+2024-01-05 13:44:02,423 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: poll_exit
+2024-01-05 13:44:02,423 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 13:44:02,423 INFO    HandlerThread:19980 [handler.py:handle_request_defer():170] handle defer: 8
+2024-01-05 13:44:02,424 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: defer
+2024-01-05 13:44:02,424 INFO    SenderThread:19980 [sender.py:send_request_defer():608] handle sender defer: 8
+2024-01-05 13:44:02,424 INFO    SenderThread:19980 [job_builder.py:build():281] Attempting to build job artifact
+2024-01-05 13:44:02,424 INFO    SenderThread:19980 [job_builder.py:_get_source_type():400] is repo sourced job
+2024-01-05 13:44:02,429 INFO    SenderThread:19980 [job_builder.py:build():374] adding wandb-job metadata file
+2024-01-05 13:44:02,436 INFO    SenderThread:19980 [sender.py:transition_state():612] send defer: 9
+2024-01-05 13:44:02,437 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 13:44:02,437 DEBUG   SenderThread:19980 [sender.py:send():379] send: artifact
+2024-01-05 13:44:02,437 INFO    HandlerThread:19980 [handler.py:handle_request_defer():170] handle defer: 9
+2024-01-05 13:44:02,545 INFO    Thread-16 :19980 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240105_134358-5szvmeif\files\output.log
+2024-01-05 13:44:03,257 INFO    SenderThread:19980 [sender.py:send_artifact():1475] sent artifact job-http___192.168.10.99_Software.Git.Server_ZOOTOS_RnD-NIAS-SMART_FARM.git_DairyCow_Paper_train.py - {'id': 'QXJ0aWZhY3Q6NjgyMTcxNjI5', 'digest': '61b3341cfbcd95c64c0e359656b5cddd', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-http___192.168.10.99_Software.Git.Server_ZOOTOS_RnD-NIAS-SMART_FARM.git_DairyCow_Paper_train.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-http___192.168.10.99_Software.Git.Server_ZOOTOS_RnD-NIAS-SMART_FARM.git_DairyCow_Paper_train.py', 'alias': 'v5'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyNTI2NjY4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjgyMTcxNjI5', 'versionIndex': 5}}, 'version': 'v5'}
+2024-01-05 13:44:03,257 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: defer
+2024-01-05 13:44:03,257 INFO    SenderThread:19980 [sender.py:send_request_defer():608] handle sender defer: 9
+2024-01-05 13:44:03,257 INFO    SenderThread:19980 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-01-05 13:44:03,548 INFO    SenderThread:19980 [dir_watcher.py:finish():388] scan: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240105_134358-5szvmeif\files
+2024-01-05 13:44:03,549 INFO    SenderThread:19980 [dir_watcher.py:finish():402] scan save: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240105_134358-5szvmeif\files\conda-environment.yaml conda-environment.yaml
+2024-01-05 13:44:03,549 INFO    SenderThread:19980 [dir_watcher.py:finish():402] scan save: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240105_134358-5szvmeif\files\config.yaml config.yaml
+2024-01-05 13:44:03,549 INFO    SenderThread:19980 [dir_watcher.py:finish():402] scan save: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240105_134358-5szvmeif\files\output.log output.log
+2024-01-05 13:44:03,551 INFO    SenderThread:19980 [dir_watcher.py:finish():402] scan save: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240105_134358-5szvmeif\files\requirements.txt requirements.txt
+2024-01-05 13:44:03,554 INFO    SenderThread:19980 [dir_watcher.py:finish():402] scan save: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240105_134358-5szvmeif\files\wandb-metadata.json wandb-metadata.json
+2024-01-05 13:44:03,554 INFO    SenderThread:19980 [dir_watcher.py:finish():402] scan save: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240105_134358-5szvmeif\files\wandb-summary.json wandb-summary.json
+2024-01-05 13:44:03,557 INFO    SenderThread:19980 [sender.py:transition_state():612] send defer: 10
+2024-01-05 13:44:03,557 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 13:44:03,557 INFO    HandlerThread:19980 [handler.py:handle_request_defer():170] handle defer: 10
+2024-01-05 13:44:03,559 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: defer
+2024-01-05 13:44:03,560 INFO    SenderThread:19980 [sender.py:send_request_defer():608] handle sender defer: 10
+2024-01-05 13:44:03,560 INFO    SenderThread:19980 [file_pusher.py:finish():159] shutting down file pusher
+2024-01-05 13:44:03,998 INFO    wandb-upload_0:19980 [upload_job.py:push():131] Uploaded file E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240105_134358-5szvmeif\files\config.yaml
+2024-01-05 13:44:04,219 INFO    wandb-upload_1:19980 [upload_job.py:push():131] Uploaded file E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240105_134358-5szvmeif\files\output.log
+2024-01-05 13:44:04,425 INFO    wandb-upload_3:19980 [upload_job.py:push():131] Uploaded file E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240105_134358-5szvmeif\files\wandb-summary.json
+2024-01-05 13:44:04,467 INFO    wandb-upload_2:19980 [upload_job.py:push():131] Uploaded file E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240105_134358-5szvmeif\files\requirements.txt
+2024-01-05 13:44:04,669 INFO    Thread-15 :19980 [sender.py:transition_state():612] send defer: 11
+2024-01-05 13:44:04,669 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 13:44:04,669 INFO    HandlerThread:19980 [handler.py:handle_request_defer():170] handle defer: 11
+2024-01-05 13:44:04,669 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: defer
+2024-01-05 13:44:04,669 INFO    SenderThread:19980 [sender.py:send_request_defer():608] handle sender defer: 11
+2024-01-05 13:44:04,670 INFO    SenderThread:19980 [file_pusher.py:join():164] waiting for file pusher
+2024-01-05 13:44:04,670 INFO    SenderThread:19980 [sender.py:transition_state():612] send defer: 12
+2024-01-05 13:44:04,670 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 13:44:04,670 INFO    HandlerThread:19980 [handler.py:handle_request_defer():170] handle defer: 12
+2024-01-05 13:44:04,670 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: defer
+2024-01-05 13:44:04,670 INFO    SenderThread:19980 [sender.py:send_request_defer():608] handle sender defer: 12
+2024-01-05 13:44:04,670 INFO    SenderThread:19980 [file_stream.py:finish():593] file stream finish called
+2024-01-05 13:44:04,892 INFO    SenderThread:19980 [file_stream.py:finish():597] file stream finish is done
+2024-01-05 13:44:04,892 INFO    SenderThread:19980 [sender.py:transition_state():612] send defer: 13
+2024-01-05 13:44:04,894 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 13:44:04,894 INFO    HandlerThread:19980 [handler.py:handle_request_defer():170] handle defer: 13
+2024-01-05 13:44:04,894 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: defer
+2024-01-05 13:44:04,894 INFO    SenderThread:19980 [sender.py:send_request_defer():608] handle sender defer: 13
+2024-01-05 13:44:04,894 INFO    SenderThread:19980 [sender.py:transition_state():612] send defer: 14
+2024-01-05 13:44:04,894 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 13:44:04,894 DEBUG   SenderThread:19980 [sender.py:send():379] send: final
+2024-01-05 13:44:04,894 INFO    HandlerThread:19980 [handler.py:handle_request_defer():170] handle defer: 14
+2024-01-05 13:44:04,894 DEBUG   SenderThread:19980 [sender.py:send():379] send: footer
+2024-01-05 13:44:04,895 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: defer
+2024-01-05 13:44:04,895 INFO    SenderThread:19980 [sender.py:send_request_defer():608] handle sender defer: 14
+2024-01-05 13:44:04,895 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: poll_exit
+2024-01-05 13:44:04,895 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: server_info
+2024-01-05 13:44:04,895 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: get_summary
+2024-01-05 13:44:04,895 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: poll_exit
+2024-01-05 13:44:04,896 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: sampled_history
+2024-01-05 13:44:04,896 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: server_info
+2024-01-05 13:44:04,896 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: job_info
+2024-01-05 13:44:05,091 DEBUG   SenderThread:19980 [sender.py:send_request():406] send_request: job_info
+2024-01-05 13:44:05,091 INFO    MainThread:19980 [wandb_run.py:_footer_history_summary_info():3481] rendering history
+2024-01-05 13:44:05,091 INFO    MainThread:19980 [wandb_run.py:_footer_history_summary_info():3513] rendering summary
+2024-01-05 13:44:05,091 INFO    MainThread:19980 [wandb_run.py:_footer_sync_info():3440] logging synced files
+2024-01-05 13:44:05,092 DEBUG   HandlerThread:19980 [handler.py:handle_request():144] handle_request: shutdown
+2024-01-05 13:44:05,092 INFO    HandlerThread:19980 [handler.py:finish():857] shutting down handler
+2024-01-05 13:44:05,909 INFO    WriterThread:19980 [datastore.py:close():294] close: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240105_134358-5szvmeif\run-5szvmeif.wandb
+2024-01-05 13:44:06,093 INFO    SenderThread:19980 [sender.py:finish():1552] shutting down sender
+2024-01-05 13:44:06,093 INFO    SenderThread:19980 [file_pusher.py:finish():159] shutting down file pusher
+2024-01-05 13:44:06,093 INFO    SenderThread:19980 [file_pusher.py:join():164] waiting for file pusher

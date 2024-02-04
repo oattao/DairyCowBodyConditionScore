@@ -1,0 +1,28 @@
+2024-01-14 16:11:43,948 INFO    MainThread:18412 [wandb_setup.py:_flush():76] Current SDK version is 0.15.8
+2024-01-14 16:11:43,948 INFO    MainThread:18412 [wandb_setup.py:_flush():76] Configure stats pid to 18412
+2024-01-14 16:11:43,948 INFO    MainThread:18412 [wandb_setup.py:_flush():76] Loading settings from C:\Users\ZOOTOS\.config\wandb\settings
+2024-01-14 16:11:43,948 INFO    MainThread:18412 [wandb_setup.py:_flush():76] Loading settings from E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\settings
+2024-01-14 16:11:43,948 INFO    MainThread:18412 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-01-14 16:11:43,948 INFO    MainThread:18412 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-01-14 16:11:43,949 INFO    MainThread:18412 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'DairyCow\\Paper\\train_cnn_with_depth_map.py', 'program': 'train_cnn_with_depth_map.py'}
+2024-01-14 16:11:43,949 INFO    MainThread:18412 [wandb_init.py:_log_setup():507] Logging user logs to E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240114_161143-obgzdx9k\logs\debug.log
+2024-01-14 16:11:43,949 INFO    MainThread:18412 [wandb_init.py:_log_setup():508] Logging internal logs to E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\wandb\run-20240114_161143-obgzdx9k\logs\debug-internal.log
+2024-01-14 16:11:43,949 INFO    MainThread:18412 [wandb_init.py:init():547] calling init triggers
+2024-01-14 16:11:43,949 INFO    MainThread:18412 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {'all view': ['naive', 'head', 'tail', 'left', 'right', 'center', 'full', 'cow', 'depth'], 'learning_rate': 0.0001, 'num_epochs': 100, 'val_size': 0.25, 'batch_size': 16, 'st': 0, 'depth_map_model': 'eff', 'pcd_paths': ['H:/Dairy Cow 2023/F0/Body/Cleaned/Labelling/Aligned_before_29231122', 'H:/Dairy Cow 2023/F0/Body/Cleaned/Labelling/Aligned_29231122'], 'json_paths': ['H:/Dairy Cow 2023/F0/Body/Cleaned/Labelling/Labelled_before_29231122/body_condition_score/labels', 'H:/Dairy Cow 2023/F0/Body/Cleaned/Labelling/Labelled_29231122/body_condition_score/labels'], 'label_score_path': 'H:/Dairy Cow 2023/F0/Body/Cleaned/Paper2/bcs_score.csv', 'full_cow_path': 'H:/Dairy Cow 2023/F0/Body/Cleaned/Paper2/view/cow', 'rump_path': 'H:/Dairy Cow 2023/F0/Body/Cleaned/Paper2/rump', 'rump_depth_map_path': 'H:/Dairy Cow 2023/F0/Body/Cleaned/Paper2/view/depth', 'npz_path': 'H:/Dairy Cow 2023/F0/Body/Cleaned/Paper2/view', 'view': 'depth'}
+2024-01-14 16:11:43,949 INFO    MainThread:18412 [wandb_init.py:init():596] starting backend
+2024-01-14 16:11:43,949 INFO    MainThread:18412 [wandb_init.py:init():600] setting up manager
+2024-01-14 16:11:43,951 INFO    MainThread:18412 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn, using: spawn
+2024-01-14 16:11:43,953 INFO    MainThread:18412 [wandb_init.py:init():606] backend started and connected
+2024-01-14 16:11:43,957 INFO    MainThread:18412 [wandb_init.py:init():697] updated telemetry
+2024-01-14 16:11:43,989 INFO    MainThread:18412 [wandb_init.py:init():730] communicating run to backend with 60.0 second timeout
+2024-01-14 16:11:44,650 INFO    MainThread:18412 [wandb_run.py:_on_init():2180] communicating current version
+2024-01-14 16:11:44,910 INFO    MainThread:18412 [wandb_run.py:_on_init():2189] got version response upgrade_message: "wandb version 0.16.2 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-01-14 16:11:44,910 INFO    MainThread:18412 [wandb_init.py:init():781] starting run threads in backend
+2024-01-14 16:11:45,075 INFO    MainThread:18412 [wandb_run.py:_console_start():2159] atexit reg
+2024-01-14 16:11:45,075 INFO    MainThread:18412 [wandb_run.py:_redirect():2014] redirect: wrap_raw
+2024-01-14 16:11:45,075 INFO    MainThread:18412 [wandb_run.py:_redirect():2079] Wrapping output streams.
+2024-01-14 16:11:45,075 INFO    MainThread:18412 [wandb_run.py:_redirect():2104] Redirects installed.
+2024-01-14 16:11:45,076 INFO    MainThread:18412 [wandb_init.py:init():822] run started, returning control to user process
+2024-01-14 16:16:36,512 WARNING MsgRouterThr:18412 [router.py:message_loop():77] message_loop has been closed

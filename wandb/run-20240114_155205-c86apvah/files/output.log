@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "train_cnn_with_depth_map.py", line 111, in <module>
+    main()
+  File "train_cnn_with_depth_map.py", line 108, in main
+    train(view)
+  File "train_cnn_with_depth_map.py", line 70, in train
+    dataset = {
+  File "train_cnn_with_depth_map.py", line 71, in <dictcomp>
+    tp: BCSDepthMapDataset(list_npz[tp], score_dict, naive=naive, tp='train')
+TypeError: __init__() got an unexpected keyword argument 'naive'

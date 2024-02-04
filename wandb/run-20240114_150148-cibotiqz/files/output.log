@@ -1,0 +1,37 @@
+> e:\zootos rnd\nias\smart farm\dairycow\paper\train.py(80)train()
+-> if view != 'naive':
+'cow'
+342
+61
+> e:\zootos rnd\nias\smart farm\dairycow\paper\train.py(81)train()
+-> list_train = [f"{npz_path}/{view}/{cow_regno}.{ext}" for cow_regno in list_cow_regno_train]
+> e:\zootos rnd\nias\smart farm\dairycow\paper\train.py(82)train()
+-> list_test = [f"{npz_path}/{view}/{cow_regno}.{ext}" for cow_regno in list_cow_regno_test]
+> e:\zootos rnd\nias\smart farm\dairycow\paper\train.py(86)train()
+-> list_npz = {'train': list_train, 'test': list_test}
+> e:\zootos rnd\nias\smart farm\dairycow\paper\train.py(87)train()
+-> dataset = {
+342
+61
+Traceback (most recent call last):
+  File "train.py", line 124, in <module>
+  File "train.py", line 121, in main
+  File "train.py", line 87, in train
+    tp: BCSRegressionDataset(list_npz[tp], score_dict, naive=naive, tp='train')
+  File "train.py", line 40, in eval_model
+    outputs = model(inputs)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\..\Pnet\pointnet.py", line 164, in forward
+    x1, trans, trans_feat = self.feat(x)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\..\Pnet\pointnet.py", line 104, in forward
+    trans = self.stn(x)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\..\Pnet\pointnet.py", line 72, in forward
+    x = F.relu(self.bn3(self.conv3(x)))
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\functional.py", line 1457, in relu
+    result = torch.relu(input)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.05 GiB (GPU 0; 24.00 GiB total capacity; 18.75 GiB already allocated; 2.50 GiB free; 20.19 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

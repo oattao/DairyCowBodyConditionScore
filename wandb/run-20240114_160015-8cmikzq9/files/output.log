@@ -1,0 +1,18 @@
+> e:\zootos rnd\nias\smart farm\dairycow\paper\train_cnn_with_depth_map.py(81)train()
+-> model.to(device)
+torch.Size([256, 256, 3])
+()
+Traceback (most recent call last):
+  File "train_cnn_with_depth_map.py", line 107, in <module>
+    main()
+  File "train_cnn_with_depth_map.py", line 104, in main
+    train(view)
+  File "train_cnn_with_depth_map.py", line 81, in train
+    model.to(device)
+  File "train_cnn_with_depth_map.py", line 81, in train
+    model.to(device)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

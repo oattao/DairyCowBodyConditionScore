@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "train.py", line 117, in <module>
+    if __name__ == "__main__":
+  File "train.py", line 108, in main
+    if val_loss < best_loss:
+  File "train.py", line 17, in train_model
+    for inputs, labels in dataloader:
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\utils\data\dataloader.py", line 628, in __next__
+    data = self._next_data()
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\utils\data\dataloader.py", line 671, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\utils\data\_utils\fetch.py", line 58, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\utils\data\_utils\fetch.py", line 58, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\..\utils\data.py", line 141, in __getitem__
+    x = npzfile['vertices']
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\numpy\lib\npyio.py", line 253, in __getitem__
+    return format.read_array(bytes,
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\numpy\lib\format.py", line 763, in read_array
+    data = _read_bytes(fp, read_size, "array data")
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\numpy\lib\format.py", line 892, in _read_bytes
+    r = fp.read(size - len(data))
+  File "E:\Programs\miniconda\envs\skeypoint\lib\zipfile.py", line 946, in read
+    buf += data
+KeyboardInterrupt

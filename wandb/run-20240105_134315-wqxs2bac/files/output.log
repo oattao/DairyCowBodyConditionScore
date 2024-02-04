@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "train.py", line 113, in <module>
+    main()
+  File "train.py", line 82, in main
+    dataset = {
+  File "train.py", line 83, in <dictcomp>
+    tp: BCSRegressionDataset(list_npz[tp], score_dict, naive=naive, tp='train')
+KeyError: 'val'

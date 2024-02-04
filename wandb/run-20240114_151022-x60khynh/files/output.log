@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "train.py", line 123, in <module>
+    main()
+  File "train.py", line 120, in main
+    train(view)
+  File "train.py", line 108, in train
+    train_loss = train_model(model, dataloader['train'], criterion, device, optimizer, lr_scheduler)
+  File "train.py", line 27, in train_model
+    running_loss += loss.item() * inputs.size(0)
+KeyboardInterrupt

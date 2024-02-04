@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "train_cnn_with_depth_map.py", line 111, in <module>
+    main()
+  File "train_cnn_with_depth_map.py", line 108, in main
+    train(view)
+  File "train_cnn_with_depth_map.py", line 70, in train
+    dataset = {
+  File "train_cnn_with_depth_map.py", line 71, in <dictcomp>
+    tp: BCSDepthMapDataset(list_npz[tp], score_dict, tp='train')
+  File "E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\..\utils\data.py", line 158, in __init__
+    super(BCSRegressionDataset, self).__init__()
+TypeError: super(type, obj): obj must be an instance or subtype of type

@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "train_cnn_with_depth_map.py", line 109, in <module>
+    main()
+  File "train_cnn_with_depth_map.py", line 106, in main
+    train(view)
+  File "train_cnn_with_depth_map.py", line 94, in train
+    train_loss = train_model(model, dataloader['train'], criterion, device, optimizer, lr_scheduler)
+  File "train_cnn_with_depth_map.py", line 20, in train_model
+    outputs = model(inputs)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torchvision\models\vgg.py", line 66, in forward
+    x = self.features(x)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\container.py", line 204, in forward
+    input = module(input)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\conv.py", line 463, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\conv.py", line 459, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: Given groups=1, weight of size [64, 3, 3, 3], expected input[16, 256, 256, 3] to have 3 channels, but got 256 channels instead

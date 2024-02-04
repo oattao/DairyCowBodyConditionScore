@@ -1,0 +1,54 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.8.17",
+    "heartbeatAt": "2024-01-14T05:58:47.414031",
+    "startedAt": "2024-01-14T05:58:46.432041",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "DairyCow\\Paper\\train.py",
+    "git": {
+        "remote": "http://192.168.10.99/Software.Git.Server/ZOOTOS_RnD-NIAS-SMART_FARM.git",
+        "commit": "fd2455e3216491f688ac014466b691242d307583"
+    },
+    "email": "cow@zootos.com",
+    "root": "E:/ZOOTOS RnD/NIAS/SMART FARM",
+    "host": "DESKTOP-LLADSVI",
+    "username": "ZOOTOS",
+    "executable": "E:\\Programs\\miniconda\\envs\\skeypoint\\python.exe",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 3900.0,
+        "min": 0.0,
+        "max": 3900.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3900.0,
+            "min": 0.0,
+            "max": 3900.0
+        }
+    ],
+    "disk": {
+        "total": 465.75976181030273,
+        "used": 439.8303871154785
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 63.85447692871094
+    }
+}

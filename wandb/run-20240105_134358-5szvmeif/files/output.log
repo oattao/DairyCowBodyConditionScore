@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "train.py", line 113, in <module>
+    main()
+  File "train.py", line 104, in main
+    train_loss = train_model(model, dataloader['train'], criterion, device, optimizer, lr_scheduler)
+  File "train.py", line 17, in train_model
+    for inputs, labels in dataloader:
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\utils\data\dataloader.py", line 628, in __next__
+    data = self._next_data()
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\utils\data\dataloader.py", line 671, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\utils\data\_utils\fetch.py", line 58, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\utils\data\_utils\fetch.py", line 58, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\..\utils\data.py", line 140, in __getitem__
+    npzfile = np.load(npzpath)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\numpy\lib\npyio.py", line 416, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'H:/Dairy Cow 2023/F0/Body/Cleaned/Paper2/view/naive/501330902'

@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "train.py", line 123, in <module>
+    main()
+  File "train.py", line 120, in main
+    train(view)
+  File "train.py", line 109, in train
+    val_loss = eval_model(model, dataloader['test'], criterion, device)
+  File "train.py", line 40, in eval_model
+    outputs = model(inputs)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\..\Pnet\pointnet.py", line 164, in forward
+    x1, trans, trans_feat = self.feat(x)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\..\Pnet\pointnet.py", line 104, in forward
+    trans = self.stn(x)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper\..\Pnet\pointnet.py", line 72, in forward
+    x = F.relu(self.bn3(self.conv3(x)))
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\functional.py", line 1457, in relu
+    result = torch.relu(input)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.05 GiB (GPU 0; 24.00 GiB total capacity; 18.75 GiB already allocated; 2.50 GiB free; 20.19 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

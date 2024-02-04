@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "train_cnn_with_depth_map.py", line 111, in <module>
+    main()
+  File "train_cnn_with_depth_map.py", line 108, in main
+    train(view)
+  File "train_cnn_with_depth_map.py", line 81, in train
+    num_ftrs = model.fc.in_features
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\module.py", line 1269, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'AlexNet' object has no attribute 'fc'

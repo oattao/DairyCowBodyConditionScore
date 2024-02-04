@@ -1,0 +1,22 @@
+{
+    "all view": ["naive", "head", "tail", "left", "right", "center", "full", "cow", "depth"],
+    "learning_rate": 0.0001,
+    "num_epochs": 100,
+    "val_size": 0.25,
+    "batch_size": 16,
+    "st": 0,
+    "depth_map_model": "eff",
+    "pcd_paths": [
+        "H:/Dairy Cow 2023/F0/Body/Cleaned/Labelling/Aligned_before_29231122",
+        "H:/Dairy Cow 2023/F0/Body/Cleaned/Labelling/Aligned_29231122"
+    ],
+    "json_paths": [
+        "H:/Dairy Cow 2023/F0/Body/Cleaned/Labelling/Labelled_before_29231122/body_condition_score/labels",
+        "H:/Dairy Cow 2023/F0/Body/Cleaned/Labelling/Labelled_29231122/body_condition_score/labels"
+    ],
+    "label_score_path": "H:/Dairy Cow 2023/F0/Body/Cleaned/Paper2/bcs_score.csv",
+    "full_cow_path": "H:/Dairy Cow 2023/F0/Body/Cleaned/Paper2/view/cow",
+    "rump_path": "H:/Dairy Cow 2023/F0/Body/Cleaned/Paper2/rump",
+    "rump_depth_map_path": "H:/Dairy Cow 2023/F0/Body/Cleaned/Paper2/view/depth",
+    "npz_path": "H:/Dairy Cow 2023/F0/Body/Cleaned/Paper2/view"
+}
