@@ -5,11 +5,7 @@
 
 
 ### 2. Compute POV feature
-Refer to the following files:
-
-*./script/make_view.py*<br>
-
-*./script/make_full_view.py*
+Refer to the following files: ***./script/make_view.py*** and ***./script/make_full_view.py***.
 
 ![image info](./media/pov.png)
 
