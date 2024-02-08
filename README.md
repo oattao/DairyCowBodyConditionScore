@@ -5,7 +5,7 @@
 
 
 ### 2. Compute POV feature
-Refer to code file <span style="color:blue">make_view.py</span>. and make_full_view in folder scripts
+Refer to code file <span style="color:blue">*make_view.py*</span> and make_full_view in folder scripts
 ![image info](./media/pov.png)
 
 ### 3. Training
@@ -13,7 +13,7 @@ Refer to code file <span style="color:blue">make_view.py</span>. and make_full_v
 python train_pointnet_with_pov.py
 ```
 
-### 3. Scoring
+### 4. Scoring
 ```
 python scoring_by_pov.py
 ```
