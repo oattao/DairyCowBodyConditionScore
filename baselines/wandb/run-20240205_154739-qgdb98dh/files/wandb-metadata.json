@@ -1,0 +1,54 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.8.17",
+    "heartbeatAt": "2024-02-05T06:47:41.161505",
+    "startedAt": "2024-02-05T06:47:39.906518",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "train_pointnet_with_full_body.py",
+    "codePath": "baselines\\train_pointnet_with_full_body.py",
+    "git": {
+        "remote": "git@github.com:oattao/DairyCowBodyConditionScore.git",
+        "commit": "c033dcd6b1a86b8f6f28298e0bf3c69a97d927a8"
+    },
+    "email": "hoang.duy.tang@gmail.com",
+    "root": "E:/ZOOTOS RnD/NIAS/SMART FARM/DairyCow/Paper2",
+    "host": "DESKTOP-LLADSVI",
+    "username": "ZOOTOS",
+    "executable": "E:\\Programs\\miniconda\\envs\\skeypoint\\python.exe",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 3900.0,
+        "min": 0.0,
+        "max": 3900.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3900.0,
+            "min": 0.0,
+            "max": 3900.0
+        }
+    ],
+    "disk": {
+        "total": 465.75976181030273,
+        "used": 441.73030853271484
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 63.85447692871094
+    }
+}

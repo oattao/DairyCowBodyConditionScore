@@ -1,0 +1,88 @@
+wandb_version: 1
+
+all view:
+  desc: null
+  value:
+  - naive
+  - head
+  - tail
+  - left
+  - right
+  - center
+  - full
+  - cow
+  - depth
+learning_rate:
+  desc: null
+  value: 0.0001
+num_epochs:
+  desc: null
+  value: 500
+val_size:
+  desc: null
+  value: 0.25
+batch_size:
+  desc: null
+  value: 16
+st:
+  desc: null
+  value: 0
+depth_map_model:
+  desc: null
+  value: eff
+pcd_paths:
+  desc: null
+  value:
+  - H:/Dairy Cow 2023/F0/Body/Cleaned/Labelling/Aligned_before_29231122
+  - H:/Dairy Cow 2023/F0/Body/Cleaned/Labelling/Aligned_29231122
+json_paths:
+  desc: null
+  value:
+  - H:/Dairy Cow 2023/F0/Body/Cleaned/Labelling/Labelled_before_29231122/body_condition_score/labels
+  - H:/Dairy Cow 2023/F0/Body/Cleaned/Labelling/Labelled_29231122/body_condition_score/labels
+label_score_path:
+  desc: null
+  value: H:/Dairy Cow 2023/F0/Body/Cleaned/Paper2/bcs_score.csv
+full_cow_path:
+  desc: null
+  value: H:/Dairy Cow 2023/F0/Body/Cleaned/Paper2/view/cow
+rump_path:
+  desc: null
+  value: H:/Dairy Cow 2023/F0/Body/Cleaned/Paper2/rump
+rump_depth_map_path:
+  desc: null
+  value: H:/Dairy Cow 2023/F0/Body/Cleaned/Paper2/view/depth
+npz_path:
+  desc: null
+  value: H:/Dairy Cow 2023/F0/Body/Cleaned/Paper2/view
+view:
+  desc: null
+  value: cow
+_wandb:
+  desc: null
+  value:
+    python_version: 3.8.17
+    cli_version: 0.15.8
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1707122505.72416
+    t:
+      1:
+      - 1
+      - 5
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 53
+      - 55
+      3:
+      - 16
+      - 23
+      4: 3.8.17
+      5: 0.15.8
+      8:
+      - 3
+      - 5

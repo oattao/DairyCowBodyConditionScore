@@ -5,6 +5,7 @@ import json
 import pandas as pd
 import torch
 from torchvision import models
+from sklearn.model_selection import train_test_split
 from utils.data import BCSDepthMapDataset
 import wandb
 
@@ -54,18 +55,19 @@ def train(view):
     ext = 'npz'
     
     # Prepare data
-    SPLITTER = ["train", "test"]
+    SPLITTER = ["train", "val"]
     
     npz_path = training_config['npz_path']
     label_score_path = training_config['label_score_path']
     score_dataframe = pd.read_csv(label_score_path)
     # score_dataframe = score_dataframe[score_dataframe['type']=='train']
     list_cow_regno_train = score_dataframe[score_dataframe['type']=='train']['cow_regno'].values
-    list_cow_regno_test = score_dataframe[score_dataframe['type']=='test']['cow_regno'].values
+    list_cow_regno_train, list_cow_regno_val = train_test_split(list_cow_regno_train, test_size=0.1)
+    # list_cow_regno_test = score_dataframe[score_dataframe['type']=='test']['cow_regno'].values
     score_dict = dict(zip(score_dataframe['cow_regno'].values, score_dataframe['bcs'].values))
     list_train = [f"{npz_path}/{view}/{cow_regno}.{ext}" for cow_regno in list_cow_regno_train]
-    list_test = [f"{npz_path}/{view}/{cow_regno}.{ext}" for cow_regno in list_cow_regno_test]
-    list_npz = {'train': list_train, 'test': list_test}
+    list_val = [f"{npz_path}/{view}/{cow_regno}.{ext}" for cow_regno in list_cow_regno_val]
+    list_npz = {'train': list_train, 'val': list_val}
     dataset = {
         tp: BCSDepthMapDataset(list_npz[tp], score_dict, tp='train') 
         for tp in SPLITTER
@@ -90,7 +92,7 @@ def train(view):
     best_loss = float('inf')
     for epoch in range(config.num_epochs):
         train_loss = train_model(model, dataloader['train'], criterion, device, optimizer, lr_scheduler)
-        val_loss = eval_model(model, dataloader['test'], criterion, device)
+        val_loss = eval_model(model, dataloader['val'], criterion, device)
         wandb.log({'train_loss': train_loss, 'val_loss': val_loss})
 
         if val_loss < best_loss:

@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "train_pointnet_with_full_body.py", line 123, in <module>
+    main()
+  File "train_pointnet_with_full_body.py", line 120, in main
+    train(view)
+  File "train_pointnet_with_full_body.py", line 109, in train
+    train_loss = train_model(model, dataloader['train'], criterion, device, optimizer, lr_scheduler)
+  File "train_pointnet_with_full_body.py", line 21, in train_model
+    outputs = model(inputs)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\..\Pnet\pointnet.py", line 164, in forward
+    x1, trans, trans_feat = self.feat(x)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\..\Pnet\pointnet.py", line 104, in forward
+    trans = self.stn(x)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\..\Pnet\pointnet.py", line 72, in forward
+    x = F.relu(self.bn3(self.conv3(x)))
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\batchnorm.py", line 171, in forward
+    return F.batch_norm(
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\functional.py", line 2450, in batch_norm
+    return torch.batch_norm(
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.21 GiB (GPU 0; 24.00 GiB total capacity; 16.83 GiB already allocated; 5.87 GiB free; 16.85 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "train_pointnet_with_pov.py", line 126, in <module>
+    main(run_time=i)
+  File "train_pointnet_with_pov.py", line 121, in main
+    train(view, run_time)
+  File "train_pointnet_with_pov.py", line 109, in train
+    train_loss = train_model(model, dataloader['train'], criterion, device, optimizer, lr_scheduler)
+  File "train_pointnet_with_pov.py", line 20, in train_model
+    outputs = model(inputs)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\Pnet\pointnet.py", line 164, in forward
+    x1, trans, trans_feat = self.feat(x)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\Pnet\pointnet.py", line 104, in forward
+    trans = self.stn(x)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\Pnet\pointnet.py", line 82, in forward
+    iden = iden.cuda()
+KeyboardInterrupt

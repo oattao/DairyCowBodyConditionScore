@@ -42,7 +42,7 @@ def test_model(model, dataloader, device, colname):
     return metrics, prediction
 
 def test(view):
-    with open('config.json', 'r') as fp:
+    with open('../config.json', 'r') as fp:
         config = json.load(fp)
 
     npz_path = config['npz_path']

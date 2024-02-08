@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "train_pointnet_with_naive_view_rump.py", line 124, in <module>
+    main()
+  File "train_pointnet_with_naive_view_rump.py", line 121, in main
+    train(view)
+  File "train_pointnet_with_naive_view_rump.py", line 110, in train
+    train_loss = train_model(model, dataloader['train'], criterion, device, optimizer, lr_scheduler)
+  File "train_pointnet_with_naive_view_rump.py", line 21, in train_model
+    outputs = model(inputs)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\..\Pnet\pointnet.py", line 165, in forward
+    x2 = F.relu(self.bn1(self.fc1(x1)))
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\torch\nn\modules\linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt

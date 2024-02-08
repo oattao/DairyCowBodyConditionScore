@@ -41,7 +41,7 @@ def test_model(model, dataloader, device, colname):
     return metrics, prediction
 
 def test(view):
-    with open('config.json', 'r') as fp:
+    with open('../config.json', 'r') as fp:
         config = json.load(fp)
     naive = False
     if view == 'full':
@@ -94,7 +94,7 @@ def test(view):
 
 def main():
     # for view in ["naive", "head", "tail", "left", "right", "center", "full"]:
-    view = 'full'
+    view = 'cow'
     print("Testing: ", view)
     test(view)
 

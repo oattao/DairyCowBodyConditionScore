@@ -92,7 +92,7 @@ def test(view, run_time=0):
 
 def main(run_time):
     # for view in ["naive", "head", "tail", "left", "right", "center", "full"]:
-    view = 'left'
+    view = 'full'
     print("Testing: ", view)
     test(view, run_time=i)
 

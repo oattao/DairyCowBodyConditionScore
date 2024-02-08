@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "train_pointnet_with_pov.py", line 126, in <module>
+    main(run_time=i)
+  File "train_pointnet_with_pov.py", line 121, in main
+    train(view, run_time)
+  File "train_pointnet_with_pov.py", line 110, in train
+    val_loss = eval_model(model, dataloader['val'], criterion, device)
+KeyError: 'val'

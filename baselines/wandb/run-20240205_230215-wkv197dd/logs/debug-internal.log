@@ -1,0 +1,1527 @@
+2024-02-05 23:02:15,655 INFO    StreamThr :12128 [internal.py:wandb_internal():86] W&B internal server running at pid: 12128, started at: 2024-02-05 23:02:15.654208
+2024-02-05 23:02:15,656 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status
+2024-02-05 23:02:15,660 INFO    WriterThread:12128 [datastore.py:open_for_write():85] open: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\run-wkv197dd.wandb
+2024-02-05 23:02:15,660 DEBUG   SenderThread:12128 [sender.py:send():379] send: header
+2024-02-05 23:02:15,694 DEBUG   SenderThread:12128 [sender.py:send():379] send: run
+2024-02-05 23:02:16,333 INFO    SenderThread:12128 [dir_watcher.py:__init__():211] watching files in: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files
+2024-02-05 23:02:16,333 INFO    SenderThread:12128 [sender.py:_start_run_threads():1121] run started: wkv197dd with start time 1707141735.656205
+2024-02-05 23:02:16,422 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:02:16,423 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:02:16,433 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: check_version
+2024-02-05 23:02:16,433 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: check_version
+2024-02-05 23:02:16,693 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: run_start
+2024-02-05 23:02:16,718 DEBUG   HandlerThread:12128 [system_info.py:__init__():31] System info init
+2024-02-05 23:02:16,718 DEBUG   HandlerThread:12128 [system_info.py:__init__():46] System info init done
+2024-02-05 23:02:16,718 INFO    HandlerThread:12128 [system_monitor.py:start():181] Starting system monitor
+2024-02-05 23:02:16,719 INFO    SystemMonitor:12128 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2024-02-05 23:02:16,719 INFO    HandlerThread:12128 [system_monitor.py:probe():201] Collecting system info
+2024-02-05 23:02:16,722 INFO    SystemMonitor:12128 [interfaces.py:start():190] Started cpu monitoring
+2024-02-05 23:02:16,723 INFO    SystemMonitor:12128 [interfaces.py:start():190] Started disk monitoring
+2024-02-05 23:02:16,723 INFO    SystemMonitor:12128 [interfaces.py:start():190] Started gpu monitoring
+2024-02-05 23:02:16,728 INFO    SystemMonitor:12128 [interfaces.py:start():190] Started memory monitoring
+2024-02-05 23:02:16,734 INFO    SystemMonitor:12128 [interfaces.py:start():190] Started network monitoring
+2024-02-05 23:02:16,753 DEBUG   HandlerThread:12128 [system_info.py:probe():195] Probing system
+2024-02-05 23:02:16,755 DEBUG   HandlerThread:12128 [system_info.py:_probe_git():180] Probing git
+2024-02-05 23:02:16,811 DEBUG   HandlerThread:12128 [system_info.py:_probe_git():188] Probing git done
+2024-02-05 23:02:16,811 DEBUG   HandlerThread:12128 [system_info.py:probe():240] Probing system done
+2024-02-05 23:02:16,811 DEBUG   HandlerThread:12128 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.8.17', 'heartbeatAt': '2024-02-05T14:02:16.753310', 'startedAt': '2024-02-05T14:02:15.648206', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'train_cnn_with_depth_map.py', 'codePath': 'baselines\\train_cnn_with_depth_map.py', 'git': {'remote': 'git@github.com:oattao/DairyCowBodyConditionScore.git', 'commit': 'c033dcd6b1a86b8f6f28298e0bf3c69a97d927a8'}, 'email': 'hoang.duy.tang@gmail.com', 'root': 'E:/ZOOTOS RnD/NIAS/SMART FARM/DairyCow/Paper2', 'host': 'DESKTOP-LLADSVI', 'username': 'ZOOTOS', 'executable': 'E:\\Programs\\miniconda\\envs\\skeypoint\\python.exe', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 3900.0, 'min': 0.0, 'max': 3900.0}, 'cpu_freq_per_core': [{'current': 3900.0, 'min': 0.0, 'max': 3900.0}], 'disk': {'total': 465.75976181030273, 'used': 441.1963539123535}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 63.85447692871094}}
+2024-02-05 23:02:16,812 INFO    HandlerThread:12128 [system_monitor.py:probe():211] Finished collecting system info
+2024-02-05 23:02:16,812 INFO    HandlerThread:12128 [system_monitor.py:probe():214] Publishing system info
+2024-02-05 23:02:16,812 DEBUG   HandlerThread:12128 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2024-02-05 23:02:16,812 DEBUG   HandlerThread:12128 [system_info.py:_save_pip():67] Saving pip packages done
+2024-02-05 23:02:16,812 DEBUG   HandlerThread:12128 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2024-02-05 23:02:16,818 ERROR   HandlerThread:12128 [system_info.py:_save_conda():85] Error saving conda packages: [WinError 2] 지정된 파일을 찾을 수 없습니다
+Traceback (most recent call last):
+  File "E:\Programs\miniconda\envs\skeypoint\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 81, in _save_conda
+    subprocess.call(
+  File "E:\Programs\miniconda\envs\skeypoint\lib\subprocess.py", line 340, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "E:\Programs\miniconda\envs\skeypoint\lib\subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "E:\Programs\miniconda\envs\skeypoint\lib\subprocess.py", line 1327, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] 지정된 파일을 찾을 수 없습니다
+2024-02-05 23:02:16,819 DEBUG   HandlerThread:12128 [system_info.py:_save_conda():86] Saving conda packages done
+2024-02-05 23:02:16,819 INFO    HandlerThread:12128 [system_monitor.py:probe():216] Finished publishing system info
+2024-02-05 23:02:16,828 DEBUG   SenderThread:12128 [sender.py:send():379] send: files
+2024-02-05 23:02:16,828 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2024-02-05 23:02:16,836 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:02:16,837 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:02:17,257 DEBUG   SenderThread:12128 [sender.py:send():379] send: telemetry
+2024-02-05 23:02:17,335 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_created():271] file/dir created: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\conda-environment.yaml
+2024-02-05 23:02:17,335 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_created():271] file/dir created: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:02:17,335 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_created():271] file/dir created: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\requirements.txt
+2024-02-05 23:02:17,336 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_created():271] file/dir created: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-metadata.json
+2024-02-05 23:02:17,689 INFO    wandb-upload_0:12128 [upload_job.py:push():131] Uploaded file C:\@TEMP\tmpdgzj_bfiwandb\2vjxqkim-wandb-metadata.json
+2024-02-05 23:02:21,289 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:02:24,548 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:02:24,549 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:02:24,549 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:02:24,550 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:02:25,438 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:02:26,579 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:02:30,371 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:02:30,371 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:02:30,372 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:02:30,373 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:02:30,490 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:02:31,847 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:02:31,848 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:02:32,109 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:02:36,061 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:02:36,061 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:02:36,061 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:02:36,063 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:02:36,553 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:02:38,085 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:02:40,915 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:02:40,915 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:02:40,916 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:02:40,917 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:02:41,598 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:02:43,951 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:02:45,787 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:02:45,788 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:02:45,788 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:02:45,789 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:02:46,649 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:02:46,853 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:02:46,854 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:02:49,133 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:02:49,684 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\config.yaml
+2024-02-05 23:02:51,418 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:02:51,418 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:02:51,419 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:02:51,420 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:02:51,706 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:02:54,458 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:02:57,098 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:02:57,099 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:02:57,099 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:02:57,101 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:02:57,776 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:03:00,125 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:03:01,875 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:03:01,875 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:03:01,947 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:03:02,515 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:03:02,515 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:03:02,516 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:03:02,815 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:03:05,552 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:03:06,790 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:03:06,791 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:03:06,791 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:03:06,793 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:03:06,863 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:03:10,821 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:03:11,634 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:03:11,635 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:03:11,635 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:03:11,636 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:03:11,911 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:03:16,492 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:03:16,492 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:03:16,492 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:03:16,493 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:03:16,493 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:03:16,749 DEBUG   SystemMonitor:12128 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2024-02-05 23:03:16,750 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:03:16,876 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:03:16,876 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:03:16,955 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:03:21,339 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:03:21,340 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:03:21,340 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:03:21,340 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:03:22,004 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:03:22,354 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:03:26,197 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:03:26,198 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:03:26,198 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:03:26,200 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:03:27,041 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:03:28,206 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:03:31,055 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:03:31,055 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:03:31,055 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:03:31,056 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:03:31,083 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:03:31,891 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:03:31,891 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:03:34,180 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:03:35,908 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:03:35,909 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:03:35,909 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:03:35,909 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:03:36,111 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:03:39,954 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:03:40,751 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:03:40,752 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:03:40,752 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:03:40,754 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:03:41,172 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:03:45,603 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:03:45,604 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:03:45,604 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:03:45,604 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:03:45,605 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:03:46,226 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:03:46,766 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:03:46,906 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:03:46,906 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:03:50,467 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:03:50,467 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:03:50,468 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:03:50,468 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:03:51,278 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:03:51,483 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:03:55,317 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:03:55,318 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:03:55,318 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:03:55,320 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:03:55,330 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:03:57,329 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:04:00,168 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:04:00,168 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:04:00,169 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:04:00,169 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:04:00,358 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:04:01,916 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:04:01,916 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:04:02,758 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:04:05,824 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:04:05,824 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:04:05,824 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:04:05,826 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:04:06,405 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:04:07,842 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:04:10,674 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:04:10,675 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:04:10,675 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:04:10,676 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:04:11,454 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:04:13,710 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:04:15,517 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:04:15,518 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:04:15,518 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:04:15,519 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:04:16,491 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:04:16,777 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:04:16,917 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:04:16,917 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:04:19,205 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:04:20,369 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:04:20,369 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:04:20,370 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:04:20,370 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:04:20,531 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:04:24,412 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:04:25,214 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:04:25,215 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:04:25,215 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:04:25,216 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:04:25,574 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:04:30,074 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:04:30,075 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:04:30,075 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:04:30,076 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:04:30,077 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:04:30,630 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:04:31,924 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:04:31,924 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:04:34,922 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:04:34,923 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:04:34,923 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:04:34,923 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:04:35,682 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:04:35,934 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:04:39,777 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:04:39,778 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:04:39,778 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:04:39,778 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:04:40,732 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:04:41,798 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:04:44,623 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:04:44,623 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:04:44,623 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:04:44,625 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:04:44,757 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:04:46,793 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:04:46,918 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:04:46,934 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:04:46,934 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:04:49,482 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:04:49,482 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:04:49,483 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:04:49,483 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:04:49,811 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:04:52,513 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:04:54,340 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:04:54,341 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:04:54,341 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:04:54,342 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:04:54,866 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:04:58,395 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:04:59,188 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:04:59,189 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:04:59,189 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:04:59,191 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:04:59,911 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:05:01,946 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:05:01,946 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:05:04,037 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:05:04,038 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:05:04,038 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:05:04,038 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:05:04,039 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:05:04,965 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:05:08,888 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:05:08,888 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:05:08,888 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:05:08,889 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:05:09,011 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:05:09,896 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:05:13,731 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:05:13,731 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:05:13,731 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:05:13,733 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:05:14,053 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:05:15,755 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:05:16,808 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:05:16,966 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:05:16,966 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:05:18,570 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:05:18,570 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:05:18,571 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:05:18,571 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:05:19,088 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:05:21,602 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:05:23,415 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:05:23,415 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:05:23,416 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:05:23,416 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:05:24,143 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:05:27,457 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:05:28,271 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:05:28,272 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:05:28,272 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:05:28,274 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:05:29,196 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:05:31,983 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:05:31,983 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:05:33,117 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:05:33,118 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:05:33,118 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:05:33,118 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:05:33,119 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:05:33,241 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:05:37,966 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:05:37,967 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:05:37,967 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:05:37,967 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:05:38,290 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:05:38,972 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:05:42,809 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:05:42,810 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:05:42,810 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:05:42,812 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:05:43,343 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:05:44,832 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:05:46,817 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:05:47,004 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:05:47,004 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:05:47,652 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:05:47,652 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:05:47,653 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:05:47,653 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:05:48,393 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:05:50,676 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:05:52,509 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:05:52,510 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:05:52,510 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:05:52,511 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:05:53,433 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:05:56,544 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:05:57,349 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:05:57,350 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:05:57,350 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:05:57,352 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:05:57,475 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:06:01,966 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:06:01,997 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:06:01,997 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:06:02,201 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:06:02,421 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:06:02,421 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:06:02,422 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:06:02,518 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:06:07,045 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:06:07,046 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:06:07,046 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:06:07,046 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:06:07,047 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:06:07,577 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:06:11,896 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:06:11,897 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:06:11,897 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:06:11,898 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:06:12,628 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:06:12,912 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:06:16,751 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:06:16,752 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:06:16,752 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:06:16,752 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:06:16,821 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:06:17,008 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:06:17,008 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:06:17,672 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:06:18,317 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:06:21,614 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:06:21,615 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:06:21,615 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:06:21,616 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:06:21,707 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:06:23,635 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:06:26,453 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:06:26,454 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:06:26,454 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:06:26,455 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:06:26,756 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:06:29,491 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:06:31,306 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:06:31,306 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:06:31,307 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:06:31,320 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:06:31,812 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:06:32,018 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:06:32,018 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:06:35,395 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:06:36,160 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:06:36,161 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:06:36,161 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:06:36,162 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:06:36,864 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:06:41,020 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:06:41,021 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:06:41,021 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:06:41,021 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:06:41,023 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:06:41,923 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:06:45,862 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:06:45,862 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:06:45,862 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:06:45,863 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:06:45,977 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:06:46,833 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:06:46,833 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:06:47,037 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:06:47,037 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:06:50,715 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:06:50,715 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:06:50,715 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:06:50,716 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:06:51,022 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:06:52,728 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:06:55,579 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:06:55,580 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:06:55,580 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:06:55,582 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:06:56,072 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:06:58,618 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:07:00,413 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:07:00,414 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:07:00,414 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:07:00,414 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:07:01,137 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:07:02,039 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:07:02,039 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:07:04,443 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:07:05,271 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:07:05,272 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:07:05,272 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:07:05,273 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:07:06,196 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:07:10,118 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:07:10,119 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:07:10,119 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:07:10,121 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:07:10,122 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:07:10,240 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:07:14,964 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:07:14,964 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:07:14,965 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:07:14,965 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:07:15,294 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:07:15,973 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:07:16,837 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:07:17,042 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:07:17,043 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:07:19,804 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:07:19,804 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:07:19,805 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:07:19,805 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:07:20,327 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:07:21,823 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:07:24,645 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:07:24,646 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:07:24,646 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:07:24,647 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:07:25,376 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:07:27,683 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:07:29,497 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:07:29,497 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:07:29,498 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:07:29,498 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:07:30,430 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:07:32,054 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:07:32,054 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:07:32,767 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:07:34,339 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:07:34,339 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:07:34,339 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:07:34,340 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:07:34,463 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:07:38,373 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:07:39,190 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:07:39,191 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:07:39,191 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:07:39,192 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:07:39,505 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:07:44,035 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:07:44,036 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:07:44,036 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:07:44,037 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:07:44,038 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:07:44,536 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:07:46,848 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:07:47,084 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:07:47,084 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:07:48,891 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:07:48,892 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:07:48,892 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:07:48,893 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:07:49,596 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:07:49,897 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:07:53,737 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:07:53,738 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:07:53,738 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:07:53,739 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:07:54,657 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:07:55,759 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:07:58,597 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:07:58,598 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:07:58,598 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:07:58,599 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:07:58,694 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:08:01,628 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:08:02,086 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:08:02,086 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:08:03,444 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:08:03,444 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:08:03,445 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:08:03,445 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:08:03,739 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:08:07,479 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:08:08,287 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:08:08,287 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:08:08,287 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:08:08,288 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:08:08,775 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:08:13,144 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:08:13,145 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:08:13,145 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:08:13,145 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:08:13,146 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:08:13,831 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:08:16,860 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:08:17,107 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:08:17,107 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:08:17,990 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:08:17,991 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:08:17,991 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:08:17,992 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:08:18,876 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:08:19,003 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:08:22,854 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:08:22,854 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:08:22,854 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:08:22,855 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:08:22,910 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:08:24,882 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:08:27,698 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:08:27,699 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:08:27,699 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:08:27,699 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:08:27,960 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:08:30,713 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:08:32,112 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:08:32,112 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:08:32,543 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:08:32,544 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:08:32,544 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:08:32,544 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:08:32,989 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:08:36,575 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:08:37,377 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:08:37,378 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:08:37,378 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:08:37,379 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:08:38,038 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:08:42,222 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:08:42,223 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:08:42,223 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:08:42,223 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:08:42,223 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:08:43,088 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:08:46,860 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:08:47,072 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:08:47,073 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:08:47,073 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:08:47,074 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:08:47,129 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:08:47,129 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:08:47,132 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:08:47,360 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:08:51,935 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:08:51,935 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:08:51,935 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:08:51,936 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:08:52,181 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:08:52,941 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:08:56,781 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:08:56,781 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:08:56,782 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:08:56,782 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:08:57,243 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:08:58,785 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:09:01,650 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:09:01,651 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:09:01,651 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:09:01,651 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:09:02,134 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:09:02,135 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:09:02,291 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:09:04,558 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:09:06,511 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:09:06,512 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:09:06,512 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:09:06,513 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:09:07,353 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:09:10,558 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:09:11,364 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:09:11,365 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:09:11,365 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:09:11,366 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:09:11,396 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:09:16,216 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:09:16,217 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:09:16,217 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:09:16,217 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:09:16,218 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:09:16,448 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:09:16,876 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:09:17,144 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:09:17,144 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:09:21,073 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:09:21,074 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:09:21,074 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:09:21,076 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:09:21,497 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:09:22,089 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:09:25,916 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:09:25,917 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:09:25,917 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:09:25,918 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:09:26,533 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:09:27,942 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:09:30,771 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:09:30,772 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:09:30,772 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:09:30,773 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:09:31,579 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:09:32,150 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:09:32,150 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:09:33,378 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:09:35,625 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:09:35,625 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:09:35,626 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:09:35,627 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:09:35,627 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:09:38,655 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:09:40,479 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:09:40,480 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:09:40,480 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:09:40,480 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:09:40,673 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:09:44,526 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:09:45,324 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:09:45,324 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:09:45,325 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:09:45,325 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:09:45,723 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:09:46,879 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:09:47,177 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:09:47,177 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:09:50,169 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:09:50,170 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:09:50,170 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:09:50,170 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:09:50,170 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:09:50,779 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:09:55,027 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:09:55,028 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:09:55,028 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:09:55,030 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:09:55,844 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:09:56,042 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:09:59,882 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:09:59,883 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:09:59,883 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:09:59,883 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:10:00,889 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:10:01,897 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:10:02,181 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:10:02,182 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:10:04,732 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:10:04,733 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:10:04,733 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:10:04,734 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:10:04,928 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:10:07,765 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:10:09,581 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:10:09,582 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:10:09,582 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:10:09,582 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:10:09,983 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:10:13,634 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:10:14,433 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:10:14,434 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:10:14,434 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:10:14,434 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:10:15,035 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:10:16,881 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:10:17,206 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:10:17,206 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:10:19,281 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:10:19,282 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:10:19,282 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:10:19,282 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:10:19,283 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:10:20,080 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:10:24,133 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:10:24,134 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:10:24,134 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:10:24,135 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:10:25,122 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:10:25,138 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:10:28,977 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:10:28,978 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:10:28,978 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:10:28,980 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:10:29,163 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:10:30,991 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:10:32,223 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:10:32,223 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:10:33,822 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:10:33,822 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:10:33,822 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:10:33,823 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:10:34,212 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:10:36,846 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:10:38,670 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:10:38,670 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:10:38,671 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:10:38,671 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:10:39,266 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:10:42,710 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:10:43,519 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:10:43,520 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:10:43,520 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:10:43,520 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:10:44,313 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:10:46,888 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:10:47,218 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:10:47,219 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:10:48,366 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:10:48,366 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:10:48,366 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:10:48,366 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:10:48,367 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:10:49,347 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:10:53,229 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:10:53,230 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:10:53,230 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:10:53,231 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:10:53,390 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:10:54,245 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:10:58,075 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:10:58,076 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:10:58,076 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:10:58,076 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:10:58,447 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:11:00,096 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:11:02,229 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:11:02,229 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:11:02,922 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:11:02,923 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:11:02,923 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:11:02,925 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:11:03,507 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:11:05,950 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:11:07,773 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:11:07,774 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:11:07,774 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:11:07,774 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:11:08,550 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:11:11,812 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:11:12,628 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:11:12,629 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:11:12,629 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:11:12,629 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:11:13,594 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:11:16,890 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:11:16,891 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:11:17,239 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:11:17,239 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:11:17,482 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:11:17,489 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:11:17,489 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:11:17,490 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:11:17,631 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:11:22,326 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:11:22,326 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:11:22,326 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:11:22,327 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:11:22,327 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:11:22,688 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:11:27,178 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:11:27,179 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:11:27,179 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:11:27,180 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:11:27,733 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:11:28,192 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:11:32,027 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:11:32,028 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:11:32,028 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:11:32,029 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:11:32,252 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:11:32,252 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:11:32,783 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:11:33,543 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:11:36,880 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:11:36,881 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:11:36,881 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:11:36,883 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:11:37,839 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:11:38,899 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:11:41,728 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:11:41,729 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:11:41,729 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:11:41,729 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:11:41,884 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:11:44,761 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:11:46,583 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:11:46,583 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:11:46,584 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:11:46,584 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:11:46,898 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:11:46,930 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:11:47,244 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:11:47,245 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:11:50,543 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:11:51,434 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:11:51,435 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:11:51,435 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:11:51,435 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:11:51,981 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:11:56,290 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:11:56,290 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:11:56,290 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:11:56,291 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:11:56,291 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:11:57,038 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:12:01,142 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:12:01,142 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:12:01,142 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:12:01,143 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:12:02,093 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:12:02,139 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:12:02,264 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:12:02,264 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:12:05,983 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:12:05,984 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:12:05,984 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:12:05,984 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:12:06,133 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:12:07,997 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:12:10,826 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:12:10,827 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:12:10,827 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:12:10,829 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:12:11,180 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:12:13,861 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:12:15,668 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:12:15,669 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:12:15,669 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:12:15,670 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:12:16,232 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:12:16,898 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:12:17,278 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:12:17,278 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:12:19,513 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:12:20,521 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:12:20,522 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:12:20,522 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:12:20,523 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:12:21,285 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:12:24,568 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:12:25,385 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:12:25,386 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:12:25,386 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:12:25,386 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:12:26,331 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:12:30,221 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:12:30,222 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:12:30,222 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:12:30,222 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:12:30,223 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:12:30,371 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:12:32,300 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:12:32,300 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:12:35,072 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:12:35,073 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:12:35,073 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:12:35,073 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:12:35,430 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:12:36,078 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:12:39,926 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:12:39,927 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:12:39,927 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:12:39,928 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:12:40,487 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:12:41,942 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:12:44,774 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:12:44,774 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:12:44,774 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:12:44,776 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:12:45,544 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:12:46,903 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:12:47,171 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:12:47,296 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:12:47,296 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:12:49,618 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:12:49,619 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:12:49,619 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:12:49,620 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:12:50,600 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:12:52,657 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:12:54,478 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:12:54,479 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:12:54,479 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:12:54,480 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:12:54,651 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:12:58,528 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:12:59,340 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:12:59,340 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:12:59,341 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:12:59,341 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:12:59,701 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:13:02,292 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:13:02,292 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:13:03,704 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:13:04,181 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:13:04,181 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:13:04,181 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:13:04,182 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:13:04,749 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:13:09,041 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:13:09,042 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:13:09,042 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:13:09,042 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:13:09,043 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:13:09,807 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:13:13,892 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:13:13,893 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:13:13,893 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:13:13,894 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:13:14,848 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:13:14,895 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:13:16,914 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:13:17,305 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:13:17,305 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:13:18,755 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:13:18,756 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:13:18,756 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:13:18,757 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:13:18,880 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:13:20,775 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:13:23,615 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:13:23,615 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:13:23,615 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:13:23,616 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:13:23,926 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:13:26,649 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:13:28,474 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:13:28,474 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:13:28,475 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:13:28,475 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:13:28,992 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:13:32,208 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:13:32,318 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:13:32,319 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:13:33,320 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:13:33,321 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:13:33,321 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:13:33,322 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:13:34,034 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:13:37,363 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:13:38,186 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:13:38,187 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:13:38,187 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:13:38,188 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:13:39,085 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:13:43,027 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:13:43,028 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:13:43,029 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:13:43,029 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:13:43,030 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:13:43,134 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:13:46,925 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:13:47,331 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:13:47,331 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:13:47,880 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:13:47,884 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:13:47,884 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:13:47,885 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:13:48,186 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:13:48,893 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:13:52,742 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:13:52,742 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:13:52,742 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:13:52,743 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:13:53,224 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:13:54,772 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:13:57,597 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:13:57,597 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:13:57,597 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:13:57,598 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:13:58,275 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:14:00,627 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:14:02,336 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:14:02,336 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:14:02,448 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:14:02,538 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:14:02,538 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:14:02,539 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:14:03,334 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:14:06,592 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:14:07,293 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:14:07,294 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:14:07,294 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:14:07,294 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:14:07,374 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:14:12,140 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:14:12,141 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:14:12,141 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:14:12,141 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:14:12,142 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:14:12,428 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:14:16,940 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:14:16,989 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:14:16,990 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:14:16,990 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:14:16,990 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:14:17,237 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:14:17,361 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:14:17,362 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:14:17,470 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:14:21,828 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:14:21,829 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:14:21,829 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:14:21,830 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:14:22,511 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:14:22,844 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:14:26,677 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:14:26,677 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:14:26,678 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:14:26,678 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:14:27,562 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:14:28,702 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:14:31,514 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:14:31,515 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:14:31,515 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:14:31,516 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:14:31,591 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:14:32,364 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:14:32,365 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:14:33,913 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:14:36,374 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:14:36,375 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:14:36,375 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:14:36,375 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:14:36,646 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:14:39,405 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:14:41,223 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:14:41,223 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:14:41,224 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:14:41,224 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:14:41,689 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:14:45,268 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:14:46,081 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:14:46,082 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:14:46,082 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:14:46,082 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:14:46,737 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:14:46,942 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:14:47,366 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:14:47,366 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:14:50,695 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:14:50,935 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:14:50,936 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:14:50,936 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:14:50,936 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:14:51,786 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:14:55,787 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:14:55,787 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:14:55,788 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:14:55,788 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:14:55,789 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:14:55,836 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:15:00,642 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:15:00,642 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:15:00,642 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:15:00,643 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:15:00,880 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:15:01,644 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:15:02,381 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:15:02,381 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:15:05,485 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:15:05,486 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:15:05,486 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:15:05,487 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:15:05,925 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:15:07,492 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:15:10,336 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:15:10,337 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:15:10,337 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:15:10,338 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:15:10,968 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:15:13,371 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:15:15,188 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:15:15,189 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:15:15,189 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:15:15,189 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:15:16,018 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:15:16,954 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:15:17,396 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:15:17,396 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:15:18,613 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:15:20,060 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:15:20,060 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:15:20,060 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:15:20,061 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:15:20,066 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:15:24,111 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:15:24,917 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:15:24,918 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:15:24,918 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:15:24,918 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:15:25,121 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:15:29,767 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:15:29,768 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:15:29,768 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:15:29,768 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:15:29,769 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:15:30,182 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:15:32,394 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:15:32,394 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:15:34,620 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:15:34,620 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:15:34,620 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:15:34,621 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:15:35,232 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:15:35,628 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:15:39,480 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:15:39,480 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:15:39,481 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:15:39,481 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:15:40,280 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:15:41,500 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:15:44,329 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:15:44,330 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:15:44,330 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:15:44,331 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:15:45,339 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:15:46,954 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:15:46,955 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:15:47,393 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:15:47,393 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:15:49,183 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:15:49,184 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:15:49,184 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:15:49,185 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:15:49,383 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:15:52,207 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:15:54,036 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:15:54,037 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:15:54,037 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:15:54,038 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:15:54,429 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:15:58,073 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:15:58,895 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:15:58,895 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:15:58,896 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:15:58,896 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:15:59,477 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:16:02,395 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:16:02,395 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:16:03,639 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:16:03,749 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:16:03,749 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:16:03,749 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:16:03,750 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:16:04,512 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:16:08,597 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:16:08,598 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:16:08,598 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:16:08,599 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:16:09,561 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:16:09,607 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:16:13,440 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:16:13,441 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:16:13,441 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:16:13,442 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:16:13,597 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:16:15,459 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:16:16,960 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:16:17,401 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:16:17,401 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:16:18,295 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:16:18,295 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:16:18,295 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:16:18,296 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:16:18,651 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:16:21,323 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:16:23,140 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:16:23,141 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:16:23,141 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:16:23,142 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:16:23,712 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:16:27,187 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:16:27,992 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:16:27,992 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:16:27,993 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:16:27,993 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:16:28,770 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:16:32,302 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:16:32,427 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:16:32,427 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:16:32,833 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:16:32,834 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:16:32,834 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:16:32,835 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:16:33,821 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:16:37,682 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:16:37,683 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:16:37,683 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:16:37,683 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:16:37,684 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:16:37,869 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:16:42,536 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:16:42,536 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:16:42,536 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:16:42,537 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:16:42,919 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:16:43,547 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:16:46,967 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:16:47,384 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:16:47,385 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:16:47,385 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:16:47,385 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:16:47,426 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:16:47,426 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:16:47,975 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:16:48,731 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:16:52,224 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:16:52,225 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:16:52,225 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:16:52,225 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:16:53,023 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:16:54,237 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:16:57,065 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:16:57,066 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:16:57,066 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:16:57,066 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:16:58,075 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:17:00,090 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:17:01,917 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:17:01,917 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:17:01,918 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:17:01,918 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:17:02,104 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:17:02,421 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:17:02,422 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:17:05,654 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:17:06,760 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:17:06,761 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:17:06,761 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:17:06,761 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:17:07,154 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:17:10,808 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:17:11,606 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:17:11,607 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:17:11,607 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:17:11,608 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:17:12,218 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:17:16,457 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:17:16,458 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:17:16,458 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:17:16,458 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:17:16,459 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:17:16,970 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:17:17,271 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:17:17,444 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:17:17,444 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:17:21,309 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:17:21,310 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:17:21,310 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:17:21,310 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:17:22,315 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:17:22,316 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:17:26,161 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:17:26,162 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:17:26,162 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:17:26,162 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:17:26,347 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:17:28,180 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:17:31,024 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:17:31,024 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:17:31,024 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:17:31,025 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:17:31,394 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:17:32,453 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:17:32,454 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:17:33,667 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:17:35,871 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:17:35,871 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:17:35,872 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:17:35,872 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:17:36,439 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:17:38,902 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:17:40,729 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:17:40,730 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:17:40,730 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:17:40,731 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:17:41,489 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:17:44,768 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:17:45,579 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:17:45,580 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:17:45,580 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:17:45,581 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:17:46,535 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:17:46,976 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:17:47,465 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:17:47,465 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:17:49,771 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:17:50,418 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:17:50,418 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:17:50,419 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:17:50,419 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:17:50,574 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:17:55,273 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:17:55,274 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:17:55,274 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:17:55,274 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:17:55,275 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:17:55,642 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:18:00,126 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:18:00,127 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:18:00,127 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:18:00,127 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:18:00,704 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:18:01,128 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:18:02,471 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:18:02,471 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:18:04,982 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:18:04,983 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:18:04,983 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:18:04,983 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:18:05,748 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:18:06,996 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:18:09,838 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:18:09,838 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:18:09,839 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:18:09,839 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:18:10,794 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:18:12,854 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:18:14,696 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:18:14,697 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:18:14,697 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:18:14,698 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:18:14,829 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:18:16,991 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:18:17,480 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:18:17,481 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:18:18,709 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:18:19,551 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:18:19,552 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:18:19,552 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:18:19,552 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:18:19,881 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:18:24,397 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:18:24,397 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:18:24,398 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:18:24,398 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:18:24,398 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:18:24,938 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:18:29,242 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:18:29,243 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:18:29,243 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:18:29,243 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:18:29,991 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:18:30,259 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:18:32,503 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-05 23:18:32,504 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: stop_status
+2024-02-05 23:18:34,087 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-05 23:18:34,088 DEBUG   SenderThread:12128 [sender.py:send():379] send: history
+2024-02-05 23:18:34,089 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: summary_record
+2024-02-05 23:18:34,089 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:18:34,090 DEBUG   SenderThread:12128 [sender.py:send():379] send: exit
+2024-02-05 23:18:34,090 INFO    SenderThread:12128 [sender.py:send_exit():584] handling exit code: 0
+2024-02-05 23:18:34,090 INFO    SenderThread:12128 [sender.py:send_exit():586] handling runtime: 977
+2024-02-05 23:18:34,090 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:18:34,091 INFO    SenderThread:12128 [sender.py:send_exit():592] send defer
+2024-02-05 23:18:34,091 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: defer
+2024-02-05 23:18:34,091 INFO    HandlerThread:12128 [handler.py:handle_request_defer():170] handle defer: 0
+2024-02-05 23:18:34,091 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: defer
+2024-02-05 23:18:34,092 INFO    SenderThread:12128 [sender.py:send_request_defer():608] handle sender defer: 0
+2024-02-05 23:18:34,092 INFO    SenderThread:12128 [sender.py:transition_state():612] send defer: 1
+2024-02-05 23:18:34,092 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: defer
+2024-02-05 23:18:34,092 INFO    HandlerThread:12128 [handler.py:handle_request_defer():170] handle defer: 1
+2024-02-05 23:18:34,092 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: defer
+2024-02-05 23:18:34,092 INFO    SenderThread:12128 [sender.py:send_request_defer():608] handle sender defer: 1
+2024-02-05 23:18:34,092 INFO    SenderThread:12128 [sender.py:transition_state():612] send defer: 2
+2024-02-05 23:18:34,093 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: defer
+2024-02-05 23:18:34,093 INFO    HandlerThread:12128 [handler.py:handle_request_defer():170] handle defer: 2
+2024-02-05 23:18:34,093 INFO    HandlerThread:12128 [system_monitor.py:finish():190] Stopping system monitor
+2024-02-05 23:18:34,093 DEBUG   SystemMonitor:12128 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2024-02-05 23:18:34,098 INFO    HandlerThread:12128 [interfaces.py:finish():202] Joined cpu monitor
+2024-02-05 23:18:34,098 DEBUG   SystemMonitor:12128 [system_monitor.py:_start():170] Publishing last batch of metrics
+2024-02-05 23:18:34,098 INFO    HandlerThread:12128 [interfaces.py:finish():202] Joined disk monitor
+2024-02-05 23:18:34,162 INFO    HandlerThread:12128 [interfaces.py:finish():202] Joined gpu monitor
+2024-02-05 23:18:34,163 INFO    HandlerThread:12128 [interfaces.py:finish():202] Joined memory monitor
+2024-02-05 23:18:34,163 INFO    HandlerThread:12128 [interfaces.py:finish():202] Joined network monitor
+2024-02-05 23:18:34,163 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: defer
+2024-02-05 23:18:34,163 INFO    SenderThread:12128 [sender.py:send_request_defer():608] handle sender defer: 2
+2024-02-05 23:18:34,163 INFO    SenderThread:12128 [sender.py:transition_state():612] send defer: 3
+2024-02-05 23:18:34,163 DEBUG   SenderThread:12128 [sender.py:send():379] send: stats
+2024-02-05 23:18:34,163 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: defer
+2024-02-05 23:18:34,164 INFO    HandlerThread:12128 [handler.py:handle_request_defer():170] handle defer: 3
+2024-02-05 23:18:34,164 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: defer
+2024-02-05 23:18:34,165 INFO    SenderThread:12128 [sender.py:send_request_defer():608] handle sender defer: 3
+2024-02-05 23:18:34,165 INFO    SenderThread:12128 [sender.py:transition_state():612] send defer: 4
+2024-02-05 23:18:34,165 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: defer
+2024-02-05 23:18:34,165 INFO    HandlerThread:12128 [handler.py:handle_request_defer():170] handle defer: 4
+2024-02-05 23:18:34,165 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: defer
+2024-02-05 23:18:34,165 INFO    SenderThread:12128 [sender.py:send_request_defer():608] handle sender defer: 4
+2024-02-05 23:18:34,165 INFO    SenderThread:12128 [sender.py:transition_state():612] send defer: 5
+2024-02-05 23:18:34,165 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: defer
+2024-02-05 23:18:34,165 INFO    HandlerThread:12128 [handler.py:handle_request_defer():170] handle defer: 5
+2024-02-05 23:18:34,166 DEBUG   SenderThread:12128 [sender.py:send():379] send: summary
+2024-02-05 23:18:34,166 INFO    SenderThread:12128 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-02-05 23:18:34,167 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: defer
+2024-02-05 23:18:34,167 INFO    SenderThread:12128 [sender.py:send_request_defer():608] handle sender defer: 5
+2024-02-05 23:18:34,167 INFO    SenderThread:12128 [sender.py:transition_state():612] send defer: 6
+2024-02-05 23:18:34,167 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: defer
+2024-02-05 23:18:34,167 INFO    HandlerThread:12128 [handler.py:handle_request_defer():170] handle defer: 6
+2024-02-05 23:18:34,167 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: defer
+2024-02-05 23:18:34,167 INFO    SenderThread:12128 [sender.py:send_request_defer():608] handle sender defer: 6
+2024-02-05 23:18:34,167 INFO    SenderThread:12128 [sender.py:transition_state():612] send defer: 7
+2024-02-05 23:18:34,168 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: status_report
+2024-02-05 23:18:34,168 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: defer
+2024-02-05 23:18:34,168 INFO    HandlerThread:12128 [handler.py:handle_request_defer():170] handle defer: 7
+2024-02-05 23:18:34,168 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: defer
+2024-02-05 23:18:34,168 INFO    SenderThread:12128 [sender.py:send_request_defer():608] handle sender defer: 7
+2024-02-05 23:18:34,168 INFO    SenderThread:12128 [sender.py:transition_state():612] send defer: 8
+2024-02-05 23:18:34,168 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: defer
+2024-02-05 23:18:34,168 INFO    HandlerThread:12128 [handler.py:handle_request_defer():170] handle defer: 8
+2024-02-05 23:18:34,168 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: defer
+2024-02-05 23:18:34,168 INFO    SenderThread:12128 [sender.py:send_request_defer():608] handle sender defer: 8
+2024-02-05 23:18:34,168 INFO    SenderThread:12128 [job_builder.py:build():281] Attempting to build job artifact
+2024-02-05 23:18:34,169 INFO    SenderThread:12128 [job_builder.py:_get_source_type():400] is repo sourced job
+2024-02-05 23:18:34,174 INFO    SenderThread:12128 [job_builder.py:build():374] adding wandb-job metadata file
+2024-02-05 23:18:34,181 INFO    SenderThread:12128 [sender.py:transition_state():612] send defer: 9
+2024-02-05 23:18:34,182 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: defer
+2024-02-05 23:18:34,182 DEBUG   SenderThread:12128 [sender.py:send():379] send: artifact
+2024-02-05 23:18:34,182 INFO    HandlerThread:12128 [handler.py:handle_request_defer():170] handle defer: 9
+2024-02-05 23:18:35,051 INFO    Thread-16 :12128 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:18:35,067 INFO    SenderThread:12128 [sender.py:send_artifact():1475] sent artifact job-git_github.com_oattao_DairyCowBodyConditionScore.git_baselines_train_cnn_with_depth_map.py - {'id': 'QXJ0aWZhY3Q6NzE0MjA2MTI5', 'digest': '90e957c55ef79dda8fe82dd7cbddb66b', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-git_github.com_oattao_DairyCowBodyConditionScore.git_baselines_train_cnn_with_depth_map.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-git_github.com_oattao_DairyCowBodyConditionScore.git_baselines_train_cnn_with_depth_map.py', 'alias': 'v0'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEzNzIzODY5Nw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzE0MjA2MTI5', 'versionIndex': 0}}, 'version': 'v0'}
+2024-02-05 23:18:35,067 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: defer
+2024-02-05 23:18:35,067 INFO    SenderThread:12128 [sender.py:send_request_defer():608] handle sender defer: 9
+2024-02-05 23:18:35,067 INFO    SenderThread:12128 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-02-05 23:18:35,131 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: poll_exit
+2024-02-05 23:18:36,060 INFO    SenderThread:12128 [dir_watcher.py:finish():388] scan: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files
+2024-02-05 23:18:36,060 INFO    SenderThread:12128 [dir_watcher.py:finish():402] scan save: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\conda-environment.yaml conda-environment.yaml
+2024-02-05 23:18:36,061 INFO    SenderThread:12128 [dir_watcher.py:finish():402] scan save: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\config.yaml config.yaml
+2024-02-05 23:18:36,061 INFO    SenderThread:12128 [dir_watcher.py:finish():402] scan save: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\requirements.txt requirements.txt
+2024-02-05 23:18:36,063 INFO    SenderThread:12128 [dir_watcher.py:finish():402] scan save: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-metadata.json wandb-metadata.json
+2024-02-05 23:18:36,064 INFO    SenderThread:12128 [dir_watcher.py:finish():402] scan save: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json wandb-summary.json
+2024-02-05 23:18:36,066 INFO    SenderThread:12128 [sender.py:transition_state():612] send defer: 10
+2024-02-05 23:18:36,066 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: poll_exit
+2024-02-05 23:18:36,066 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: defer
+2024-02-05 23:18:36,067 INFO    HandlerThread:12128 [handler.py:handle_request_defer():170] handle defer: 10
+2024-02-05 23:18:36,069 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: defer
+2024-02-05 23:18:36,069 INFO    SenderThread:12128 [sender.py:send_request_defer():608] handle sender defer: 10
+2024-02-05 23:18:36,069 INFO    SenderThread:12128 [file_pusher.py:finish():159] shutting down file pusher
+2024-02-05 23:18:36,137 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: poll_exit
+2024-02-05 23:18:36,137 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: poll_exit
+2024-02-05 23:18:36,742 INFO    wandb-upload_0:12128 [upload_job.py:push():131] Uploaded file E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\config.yaml
+2024-02-05 23:18:37,010 INFO    wandb-upload_1:12128 [upload_job.py:push():131] Uploaded file E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\requirements.txt
+2024-02-05 23:18:37,012 INFO    wandb-upload_2:12128 [upload_job.py:push():131] Uploaded file E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\files\wandb-summary.json
+2024-02-05 23:18:37,141 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: poll_exit
+2024-02-05 23:18:37,141 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: poll_exit
+2024-02-05 23:18:37,220 INFO    Thread-15 :12128 [sender.py:transition_state():612] send defer: 11
+2024-02-05 23:18:37,220 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: defer
+2024-02-05 23:18:37,220 INFO    HandlerThread:12128 [handler.py:handle_request_defer():170] handle defer: 11
+2024-02-05 23:18:37,220 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: defer
+2024-02-05 23:18:37,221 INFO    SenderThread:12128 [sender.py:send_request_defer():608] handle sender defer: 11
+2024-02-05 23:18:37,221 INFO    SenderThread:12128 [file_pusher.py:join():164] waiting for file pusher
+2024-02-05 23:18:37,221 INFO    SenderThread:12128 [sender.py:transition_state():612] send defer: 12
+2024-02-05 23:18:37,221 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: defer
+2024-02-05 23:18:37,221 INFO    HandlerThread:12128 [handler.py:handle_request_defer():170] handle defer: 12
+2024-02-05 23:18:37,221 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: defer
+2024-02-05 23:18:37,221 INFO    SenderThread:12128 [sender.py:send_request_defer():608] handle sender defer: 12
+2024-02-05 23:18:37,221 INFO    SenderThread:12128 [file_stream.py:finish():593] file stream finish called
+2024-02-05 23:18:37,846 INFO    SenderThread:12128 [file_stream.py:finish():597] file stream finish is done
+2024-02-05 23:18:37,846 INFO    SenderThread:12128 [sender.py:transition_state():612] send defer: 13
+2024-02-05 23:18:37,846 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: defer
+2024-02-05 23:18:37,846 INFO    HandlerThread:12128 [handler.py:handle_request_defer():170] handle defer: 13
+2024-02-05 23:18:37,846 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: defer
+2024-02-05 23:18:37,846 INFO    SenderThread:12128 [sender.py:send_request_defer():608] handle sender defer: 13
+2024-02-05 23:18:37,846 INFO    SenderThread:12128 [sender.py:transition_state():612] send defer: 14
+2024-02-05 23:18:37,847 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: defer
+2024-02-05 23:18:37,847 DEBUG   SenderThread:12128 [sender.py:send():379] send: final
+2024-02-05 23:18:37,847 INFO    HandlerThread:12128 [handler.py:handle_request_defer():170] handle defer: 14
+2024-02-05 23:18:37,847 DEBUG   SenderThread:12128 [sender.py:send():379] send: footer
+2024-02-05 23:18:37,847 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: defer
+2024-02-05 23:18:37,847 INFO    SenderThread:12128 [sender.py:send_request_defer():608] handle sender defer: 14
+2024-02-05 23:18:37,847 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: poll_exit
+2024-02-05 23:18:37,848 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: poll_exit
+2024-02-05 23:18:37,848 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: poll_exit
+2024-02-05 23:18:37,848 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: server_info
+2024-02-05 23:18:37,848 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: get_summary
+2024-02-05 23:18:37,848 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: poll_exit
+2024-02-05 23:18:37,849 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: sampled_history
+2024-02-05 23:18:37,849 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: server_info
+2024-02-05 23:18:37,850 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: job_info
+2024-02-05 23:18:38,043 DEBUG   SenderThread:12128 [sender.py:send_request():406] send_request: job_info
+2024-02-05 23:18:38,044 INFO    MainThread:12128 [wandb_run.py:_footer_history_summary_info():3481] rendering history
+2024-02-05 23:18:38,044 INFO    MainThread:12128 [wandb_run.py:_footer_history_summary_info():3513] rendering summary
+2024-02-05 23:18:38,045 INFO    MainThread:12128 [wandb_run.py:_footer_sync_info():3440] logging synced files
+2024-02-05 23:18:38,046 DEBUG   HandlerThread:12128 [handler.py:handle_request():144] handle_request: shutdown
+2024-02-05 23:18:38,046 INFO    HandlerThread:12128 [handler.py:finish():857] shutting down handler
+2024-02-05 23:18:38,860 INFO    WriterThread:12128 [datastore.py:close():294] close: E:\ZOOTOS RnD\NIAS\SMART FARM\DairyCow\Paper2\baselines\wandb\run-20240205_230215-wkv197dd\run-wkv197dd.wandb
+2024-02-05 23:18:39,047 INFO    SenderThread:12128 [sender.py:finish():1552] shutting down sender
+2024-02-05 23:18:39,047 INFO    SenderThread:12128 [file_pusher.py:finish():159] shutting down file pusher
+2024-02-05 23:18:39,047 INFO    SenderThread:12128 [file_pusher.py:join():164] waiting for file pusher
