@@ -7,9 +7,9 @@
 ### 2. Compute POV feature
 Refer to the following files:
 
-<span style="color:blue">some *./script/make_view.py* text</span>
+<span style="color:blue">*./script/make_view.py*</span> and <br>
 
-<span style="color:blue">some *./script/make_full_view.py* text</span>
+<span style="color:blue">*./script/make_full_view.py*</span>
 
 ![image info](./media/pov.png)
 
