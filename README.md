@@ -5,7 +5,7 @@
 
 
 ### 2. Compute POV feature
-Refer to code file <span style="color:blue">*make_view.py*</span> and make_full_view in folder scripts
+Refer to code file <span style="color:blue">**make_view.py**</span> and make_full_view in folder scripts
 ![image info](./media/pov.png)
 
 ### 3. Training
