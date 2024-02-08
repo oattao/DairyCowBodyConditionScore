@@ -6,7 +6,9 @@
 
 ### 2. Compute POV feature
 Refer to code file make_view.py and make_full_view in folder scripts
-![image info](./media/overall.png)
+![image info](./media/pov.png)
 
 ### 3. Training
-[code]python train_pointnet_with_pov.py
+'''
+python train_pointnet_with_pov.py
+'''
